@@ -1,0 +1,116 @@
+@startuml ValidAI Enhanced - Arquitetura Interna
+
+!theme cerulean-outline
+title ValidAI Enhanced - Fluxo Interno Detalhado
+
+package "Interface Layer" {
+    [🌐 Gradio Interface] as Interface
+    [📱 Frontend Components] as Frontend
+}
+
+package "Business Logic Layer" {
+    [🤖 Chat Multimodal] as ChatLogic
+    [🔍 Pre Validator] as PreValidator  
+    [🧠 RAG System] as RAGSystem
+    [📊 Validator Service] as ValidatorService
+}
+
+package "Processing Layer" {
+    [📁 File Processor] as FileProcessor
+    [🔒 Security Validator] as SecurityValidator
+    [🗄️ Cache Manager] as CacheManager
+    [⚙️ Config Loader] as ConfigLoader
+}
+
+package "Data Layer" {
+    [📄 DataManager] as DataManager
+    [📋 Prompts] as Prompts
+    [💬 Messenger] as Messenger
+}
+
+package "External Services" {
+    [🔮 Google Gemini API] as GeminiAPI
+    [☁️ Google Cloud Storage] as CloudStorage
+    [🔍 Google Search API] as SearchAPI
+}
+
+package "Storage & Config" {
+    [⚙️ validai_config.json] as Config
+    [📁 temp_files/] as TempFiles
+    [📚 base_conhecimento/] as KnowledgeBase
+    [📜 logs/] as Logs
+}
+
+' Principais fluxos de dados
+Interface -> ChatLogic : user_message + files
+ChatLogic -> SecurityValidator : validate_files()
+SecurityValidator -> FileProcessor : process_validated_files()
+FileProcessor -> DataManager : convert_to_format()
+
+ChatLogic -> CacheManager : check_cache()
+CacheManager -> ChatLogic : cache_result
+
+ChatLogic -> Messenger : send_to_gemini()
+Messenger -> GeminiAPI : API_request
+GeminiAPI -> Messenger : streaming_response
+Messenger -> ChatLogic : formatted_response
+
+ChatLogic -> CacheManager : store_response()
+
+' RAG Flow
+RAGSystem -> KnowledgeBase : load_documents()
+RAGSystem -> CloudStorage : retrieve_context()
+RAGSystem -> Messenger : enhanced_query()
+
+' Pre-validation flow  
+PreValidator -> ValidatorService : validate_document()
+PreValidator -> ValidatorService : validate_code()
+PreValidator -> ValidatorService : validate_consistency()
+
+' Configuration flow
+ConfigLoader -> Config : load_json()
+ConfigLoader -> ConfigLoader : apply_env_vars()
+ConfigLoader -> CacheManager : provide_config()
+
+' Security flow
+SecurityValidator -> SecurityValidator : path_traversal_check()
+SecurityValidator -> SecurityValidator : file_type_validation()
+SecurityValidator -> SecurityValidator : malware_detection()
+
+' Logging flow
+ChatLogic -> Logs : structured_logging()
+SecurityValidator -> Logs : security_events()
+CacheManager -> Logs : performance_metrics()
+
+note top of Interface
+  **Três abas principais:**
+  • ValidAI (Chat Multimodal)
+  • Pré-Validador (Análise de Documentos/Código)  
+  • RAG (Retrieval Augmented Generation)
+end note
+
+note top of SecurityValidator
+  **Validações de segurança:**
+  • Path traversal prevention
+  • File type verification
+  • Size limits
+  • Malicious signature detection
+end note
+
+note top of CacheManager
+  **Cache inteligente:**
+  • TTL automático (30min)
+  • LRU eviction
+  • Limpeza periódica
+  • Thread-safe operations
+end note
+
+note top of RAGSystem
+  **Bases de conhecimento:**
+  • Conteúdos de INs
+  • Validações Risco Mercado
+  • Validações Risco Crédito
+  • Google Search integration
+end note
+
+@enduml

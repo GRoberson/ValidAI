@@ -1,0 +1,348 @@
+Nome,Resumo,Modelos
+VM-33-2023 - Curva Spread NTN-B.pdf,"## Tópicos e Temas Abordados no Documento:
+
+**1. Relatório de Validação de Modelo:**
+
+* **Modelo:** Curva de Spread de NTN-B (MOD000234)
+* **Objetivo do Modelo:** Obter a Estrutura a Termo de Taxa de Juros do Spread de NTN-B (spread entre as curvas NTN-B Zero Coupon e Cupom de IPCA).
+* **Metodologia de Validação:** Baseada na IN_706, abrangendo as dimensões de Governança, Documentação, Dados de Entrada, Metodologia, Emprego do Modelo e Monitoramento.
+
+**2. Resultados da Validação:**
+
+* **Conclusão Geral:** O modelo e seu entorno atendem aos objetivos com falhas mínimas.
+* **Apontamento de Risco:** Um risco baixo (R1) identificado na dimensão ""Emprego do Modelo"" devido a irregularidades no resultado da curva gerada pelo processo em produção.
+* **Recomendação:** Revisar a construção da curva no processo em produção (R1).
+* **Demais Dimensões:**  Não foram identificados riscos ou oportunidades de melhoria nas demais dimensões avaliadas.
+
+**3. Classificação do Modelo:**
+
+* **Nota Final:** C 
+* **Grau de Exigibilidade de Monitoramento (GEM):** N3 - Baixa Exigibilidade.
+* **Justificativa para o GEM:** Baixa necessidade de monitoramento devido à natureza do modelo (curva) e baixa representatividade do fator de risco.
+* **Análise de Suficiência de Monitoramento:** Plenamente Satisfatório (nota 4).
+* **Justificativa da Análise:** A performance do modelo não se deteriora com o tempo e reflete o comportamento de variáveis externas. 
+","* MOD000234 
+"
+VM-101-2023 - CDS e CLN Issue.pdf,"##  Relatório de Validação de Modelo - CDS e CLN Issue 
+
+**Objetivo:** Revalidação dos modelos CDS - Credit Default Swap (MOD000189) e CLN Issue - Credit Linked Notes Offshore (MOD000195).
+
+**Metodologia:** Baseada no IN_706, abrangendo as dimensões de Governança, Documentação, Dados de Entrada, Metodologia, Emprego do Modelo e Monitoramento.
+
+**Resultados:**
+
+* **CDS - Credit Default Swap (MOD000189):**
+    * **Classificação:** B (O modelo e seu entorno atendem aos seus objetivos com oportunidades de melhorias)
+    * **Anotações de Risco:**
+        * R1 (Risco baixo): Necessidade de revisão e atualização da relação de modelos antecessores. **Mitigado durante a validação.**
+        * R2 (Risco médio): Necessidade de revisão e ajuste no monitoramento das operações. **Mitigado durante a validação.**
+    * **Oportunidades de Melhorias:**
+        * M1: Identificar a origem das divergências no emprego do modelo CDS nos sistemas SIC e Algo.
+* **CLN Issue - Credit Linked Notes Offshore (MOD000195):**
+    * **Classificação:** A (O modelo e seu entorno atendem plenamente aos seus objetivos)
+    * **Anotações de Risco:** Nenhuma
+    * **Observação:** Não foi aplicado o teste de réplica independente devido à baixa materialidade e falta de observações de operações em janelas recentes.
+
+**Monitoramento:**
+
+* **Classificação GEM:** N1 (Alta exigibilidade) para ambos os modelos.
+* **Análise de Suficiência:**
+    * **CDS:** Inicialmente identificado como insuficiente, com a necessidade de ajustes para refletir os valores reais nos sistemas SIC e Algo. Após correção, foi classificado como ""Plenamente Satisfatório"".
+    * **CLN Issue:** Não avaliado por falta de operações vivas em 2023.
+
+**Conclusão:**
+
+* O modelo CDS apresentou oportunidades de melhoria, mas após ações corretivas, ambos os modelos foram considerados adequados para uso. 
+","* MOD000189
+* MOD000195 
+"
+VM-43-2023 - IRRBB.pdf,"O documento é um relatório de validação de modelo, referente a 3 modelos utilizados para calcular indicadores de risco de taxa de juros. O relatório apresenta um resumo executivo, objetivos, resultados, apontamentos, oportunidades de melhoria, informações sobre o monitoramento dos modelos e a classificação final atribuída pela equipe de validação.
+
+**Tópicos abordados:**
+
+* **Resumo executivo:** Apresenta um resumo dos resultados da validação, incluindo as falhas encontradas e as principais conclusões.
+* **Objetivo:** Define o objetivo do trabalho de validação, os modelos avaliados e as dimensões de análise consideradas.
+* **Resultados:** Apresenta os resultados da validação para cada modelo, classificando-os em três categorias: atende aos objetivos, atende parcialmente aos objetivos e atende aos objetivos com ressalvas.
+* **Apontamentos:** Detalha as falhas encontradas em cada modelo, classificadas por nível de risco, com a descrição da situação, consequência e o responsável pela resolução.
+* **Melhorias:** Sugere melhorias para os modelos, mesmo que não representem riscos, com a descrição da situação e o responsável pela análise.
+* **Monitoramento:** Aborda a importância do monitoramento dos modelos, a classificação GEM (Grau de Exigibilidade de Monitoramento) e a análise de suficiência do monitoramento.
+* **Classificação final:** Conclui o relatório com a classificação final do processo de monitoramento.
+
+**Temas abordados:**
+
+* **Validação de modelos:** Processo de avaliar se um modelo é adequado para a finalidade pretendida.
+* **Risco de modelo:** Risco de que um modelo seja impreciso ou inadequado, levando a decisões erradas.
+* **Governança de modelos:** Conjunto de políticas, processos e controles que regem o desenvolvimento, validação, implementação e uso de modelos.
+* **Documentação de modelos:** Conjunto de documentos que descrevem o modelo, sua metodologia, dados de entrada, saídas e limitações.
+* **Monitoramento de modelos:** Processo de acompanhar o desempenho de um modelo ao longo do tempo para garantir que ele continue a ser preciso e adequado. 
+* **Risco de taxa de juros:** Risco de perdas financeiras decorrentes de alterações nas taxas de juros.
+* **IRRBB (Interest Rate Risk in the Banking Book):** Risco de taxa de juros que afeta o resultado e o patrimônio líquido de uma instituição financeira.
+* **Delta EVE (Economic Value of Equity):** Medida da sensibilidade do valor econômico do patrimônio líquido de uma instituição financeira a alterações nas taxas de juros.
+* **Delta NII (Net Interest Income):** Medida da sensibilidade da receita líquida de juros de uma instituição financeira a alterações nas taxas de juros.
+* **EGL (Ganhos e Perdas Embutidos):** Ganhos ou perdas que estão embutidos em instrumentos financeiros e que ainda não foram realizados. 
+","Os IDs dos modelos abordados no documento são:
+
+* MOD000396
+* MOD000397
+* MOD000257 
+"
+VM-84-2023 - Modelos_Tier_III.pdf,"O documento é um Relatório de Validação de Modelo (VM-84-2023) elaborado pela Gerência Executiva de Gestão de Risco de Modelos do Banco BV. O relatório avalia quatro modelos de risco de mercado:
+
+**Modelos Avaliados:**
+
+* **MOD000644 - Swap Bonificado:** Modelo considerado satisfatório, sem a necessidade de melhorias.
+* **MOD000565 - Opção de S&P:** Modelo considerado satisfatório, porém com um apontamento em relação ao monitoramento, que após análise foi considerado satisfatório.
+* **MOD000287 - NDF Currency Offshore:** Modelo com necessidade de melhoria no processo de monitoramento, especificamente na conciliação de MtM.
+* **MOD000563 - Curva de Libor Zero Coupon (Demais moedas):** Modelo com necessidade de melhorias em relação aos dados de entrada, com a sugestão de descontinuação das curvas  LIBOR JPY e CHF.
+
+**Tópicos Abordados:**
+
+* **Resumo Executivo:** Apresentação geral dos resultados da validação dos modelos.
+* **Objetivo:** Descrição do objetivo da validação dos modelos.
+* **Resultados:** Apresentação da classificação final de cada modelo, com base nas dimensões avaliadas (Governança, Documentação, Dados de Entrada, Metodologia, Emprego do Modelo e Monitoramento).
+* **Apontamentos:** Descrição detalhada dos apontamentos levantados para cada modelo, incluindo os riscos e as medidas de mitigação.
+* **Melhorias:** Detalhamento das sugestões de melhorias para os modelos que apresentaram oportunidades de aprimoramento.
+* **Monitoramento:** Discussão sobre a classificação GEM (Grau de Exigibilidade de Monitoramento) de cada modelo e análise da suficiência do monitoramento existente.
+
+**Temas abordados:**
+
+* **Validação de modelos:** Processo de avaliar se um modelo é adequado para o propósito pretendido.
+* **Risco de mercado:** Risco de perdas financeiras devido a mudanças nos preços de mercado.
+* **Monitoramento de modelos:** Acompanhamento contínuo do desempenho de um modelo após sua implementação.
+* **Governança de modelos:** Conjunto de políticas e procedimentos para garantir o desenvolvimento, implementação e uso adequados de modelos.
+
+**Observações:**
+
+* O relatório utiliza a metodologia de validação descrita no IN_706.
+* A classificação GEM é um conceito importante que define o nível de exigência de monitoramento de um modelo.
+* O relatório apresenta uma análise detalhada de cada modelo, incluindo exemplos específicos de dados e resultados. 
+","- MOD000644
+- MOD000565
+- MOD000287
+- MOD000563 
+"
+VM-92-2023 - Swaps_Tier_III.pdf,"## Tópicos e Temas Abordados no Relatório de Validação de Modelo:
+
+**1. Modelos Avaliados:**
+
+* **Swap IPCA – TLP Onshore (MOD000554)**
+* **Swap Fluxo de Caixa com Cap (MOD000555)**
+
+**2. Objetivo da Validação:**
+
+* Revalidação dos modelos segundo a metodologia padrão (IN_706).
+* Dimensões analisadas: Governança, Documentação e Monitoramento.
+
+**3. Resultados da Validação:**
+
+* Ambos os modelos e seus entornos atendem plenamente aos objetivos em todos os aspectos avaliados.
+* **MOD000554:** Classificação A - Baixo Risco.
+* **MOD000555:** Classificação A - Baixo Risco, com um apontamento (R1).
+
+**4. Apontamentos (Findings):**
+
+* **R1 (MOD000555):** Relação de modelos antecessores desatualizada, contendo modelo inativo e omitindo dependências críticas.  A equipe de Riscos de Mercado corrigiu a relação, mitigando o risco.
+
+**5. Melhorias:**
+
+* Nenhuma falha encontrada que justificasse sugestões de melhoria.
+
+**6. Monitoramento:**
+
+* **Classificação GEM:** N1 (Alta Exigibilidade) para ambos os modelos, devido à regulamentação (Resolução 4.277) e à criticidade dos modelos para o cálculo de risco.
+* **Análise de Suficiência de Monitoramento:** Comparação entre MtM (Algo) e resultado contábil (SIC) demonstra diferenças mínimas, dentro do esperado. Monitoramento mensal granular por leg atende às exigências para Tier III.
+* **Classificação Final do Monitoramento:** 4 - Plenamente Satisfatório. 
+","* MOD000554
+* MOD000555 
+"
+VM-91-2023 - NTNA_Curva_NDF_USD_Sup_Vol_CubicSpline.pdf,"##  Relatório de Validação de Modelo -  VM-91-2023 - Riscos de Mercado 
+
+**Este relatório apresenta os resultados da validação de três modelos utilizados pelo Banco BV para Riscos de Mercado:**
+
+**1. Modelo NTN-A:**
+
+* Objetivo: Precificar e calcular o MtM de operações com NTN-A.
+* Conclusão da Validação: O modelo e seu entorno atendem plenamente aos seus objetivos.
+* Classificação GEM: N1 - Alta exigibilidade de monitoramento (devido à exigências regulatórias).
+* Monitoramento: É realizado através da conciliação entre o MtM calculado pelo sistema Algo (Riscos de Mercado) e o sistema SIC (Contábil). 
+* Resultados do Monitoramento: Não foram observadas divergências significativas.
+
+**2. Modelo Curva de NDF USDvBRL Offshore:**
+
+* Objetivo: Estimar a curva de preços de NDF USD/BRL negociadas no exterior.
+* Conclusão da Validação: O modelo e seu entorno atendem plenamente aos seus objetivos.
+* Classificação GEM: N3 - Baixa exigibilidade de monitoramento.
+* Monitoramento: Não se aplica teste de monitoramento de performance.
+
+**3. Modelo Superfície de Volatilidade - Cubic Spline:**
+
+* Objetivo: Estimar as superfícies de volatilidade para precificação de opções.
+* Conclusão da Validação: O modelo e seu entorno atendem aos seus objetivos, com oportunidades de melhorias.
+* Sugestão de Melhoria (M1): Listar em documentação os deltas considerados para a construção da superfície de volatilidade de IDI.
+* Classificação GEM: N3 - Baixa exigibilidade de monitoramento.
+* Monitoramento: Não se aplica teste de monitoramento de performance.
+
+**Considerações Gerais:**
+
+* O relatório descreve o objetivo, escopo e principais características de cada modelo.
+* São apresentados os resultados da validação, incluindo a avaliação da governança, documentação, dados, metodologia, emprego e monitoramento dos modelos.
+* O documento define o Grau de Exigibilidade de Monitoramento (GEM) para cada modelo, justificando a classificação atribuída.
+* É feita uma análise da suficiência do monitoramento realizado para cada modelo. 
+","Os IDs dos modelos abordados no documento são: 
+
+* MOD000229
+* MOD000315
+* MOD001021 
+"
+VM-117-2023 - Swaps_Term_SOFR_Onshore.pdf,"O documento é um relatório de validação de um modelo financeiro chamado ""Swap Term SOFR Onshore"" (MOD001146) realizado pelo time de Validação de Modelos do Banco BV. 
+
+**Principais Tópicos Abordados:**
+
+1. **Objetivo da Validação:**
+    * Verificar se a substituição do modelo ""Swap Libor Onshore"" (MOD000756) pelo ""Swap Term SOFR Onshore"" está adequada, considerando a mudança da taxa de referência LIBOR para SOFR.
+
+2. **Contexto da Substituição:**
+    * A mudança da taxa LIBOR para SOFR no mercado impactou os fatores de risco das operações existentes.
+    * O novo modelo visa precificar as operações com base na SOFR, mantendo as demais características.
+
+3. **Metodologia da Validação:**
+    * Foi utilizada a metodologia padrão de validação do banco (IN_706).
+    * As dimensões avaliadas foram Governança, Documentação e Monitoramento.
+
+4. **Resultados da Validação:**
+    * Foi identificada uma falha de risco médio (R1) no processo de monitoramento do novo modelo.
+    * A falha consistia na não inclusão das operações vinculadas ao novo modelo no processo de monitoramento regular.
+    * Após interação com a equipe responsável, a falha foi mitigada em tempo hábil, incorporando as operações no monitoramento.
+
+5. **Classificação do Modelo:**
+    * O modelo foi classificado com a nota ""A"" (sem ressalvas), após a mitigação da falha no monitoramento.
+
+6. **Monitoramento do Modelo:**
+    * O modelo foi classificado com Grau de Exigibilidade de Monitoramento (GEM) N1 (alta exigibilidade).
+    * A alta exigibilidade se justifica pela necessidade de atender às exigências regulatórias (Resolução 4.277) e pela criticidade da acurácia dos dados utilizados.
+    * O monitoramento é realizado mensalmente, com granularidade por operação, através da conciliação entre os sistemas Algo (Riscos) e SIC (Contábil).
+
+7. **Conclusão:**
+    * O modelo ""Swap Term SOFR Onshore"" atende aos requisitos de validação e seu monitoramento está classificado como ""Plenamente Satisfatório"". 
+","* MOD001146
+* MOD000756 
+"
+VM-123-2023 - PFE.pdf,"O documento é um Relatório de Validação de Modelo (número VM-123-2023) da Gerência Executiva de Gestão de Risco de Modelos do Banco BV, focando em modelos de PFE (Exposição Futura Potencial). O relatório aborda os seguintes tópicos:
+
+**1. Resumo Executivo:**
+
+* Apresenta uma visão geral do processo de validação, incluindo a identificação de 3 oportunidades de melhoria e 2 falhas (classificadas como risco baixo).
+* Resume as conclusões da avaliação de cada modelo nas dimensões de Governança, Documentação, Dados de Entrada, Metodologia, Emprego do Modelo e Monitoramento.
+
+**2. Objetivo:**
+
+* Define o objetivo do trabalho como a revalidação de 7 modelos de PFE, listando cada um com seu respectivo ID, nome e Tier.
+* Cita a metodologia padrão de validação (IN_706) e as dimensões avaliadas.
+
+**3. Resultados:**
+
+* Apresenta uma tabela resumindo os resultados da validação para cada modelo, incluindo a nota final (Risco Baixo) e as anotações de risco e oportunidades de melhoria identificadas.
+
+**4. Anotações de risco:**
+
+* Detalha as duas anotações de risco baixo (R1 e R2) identificadas, descrevendo a situação, a consequência e o responsável pela mitigação (Gerência de Risco de Mercado).
+
+**5. Melhorias:**
+
+* Detalha as três sugestões de melhoria (M1, M2 e M3) identificadas, descrevendo a situação e o responsável pela implementação (Riscos de Mercado).
+
+**6. Monitoramento:**
+
+* Explica o conceito de GEM (Grau de Exigibilidade de Monitoramento) e como ele se aplica aos modelos de PFE.
+* Justifica a classificação GEM N1 (alta exigibilidade) atribuída aos modelos, baseando-se na análise de Essencialidade e Monitorabilidade.
+* Apresenta uma análise da suficiência do monitoramento atual, incluindo exemplos de dashboards utilizados.
+* Conclui que o processo de monitoramento é aderente, mas apresenta oportunidades de melhoria. 
+","Os IDs dos modelos abordados no documento são:
+
+* MOD000190
+* MOD000276
+* MOD000308
+* MOD000326
+* MOD000349
+* MOD000361
+* MOD000388 
+"
+VM-34-2023 - BV Financeira MtM (MOD000181).pdf,"O documento é um relatório de validação de modelo, que visa avaliar a adequação, efetividade e os controles do modelo ""BV Financeira (MtM)"" utilizado pelo Banco BV.
+
+**Tópicos abordados:**
+
+* **Resumo Executivo:** Apresentação geral do modelo, destacando as dimensões avaliadas (Governança, Metodologia, Documentação e Dados de Entrada) e os resultados obtidos.
+* **Objetivo:** Descrição do objetivo da validação, no caso, a revalidação do modelo ""BV Financeira (MtM)"".
+* **Resultados:** Apresentação dos resultados da validação, incluindo a nota final atribuída ao modelo e a indicação de oportunidades de melhorias.
+* **Apontamentos:** Descrição detalhada de eventuais falhas ou oportunidades de melhoria identificadas durante o processo de validação. Neste caso, não foram emitidos apontamentos.
+* **Melhorias:** Detalhamento das sugestões de melhorias identificadas durante a validação, incluindo a descrição da melhoria, o responsável pela implementação e o status de implementação.
+* **Monitoramento:** Análise do processo de monitoramento do modelo, incluindo a classificação GEM (Grau de Exigibilidade de Monitoramento) e a avaliação da suficiência do monitoramento.
+
+**Temas abordados:**
+
+* **Validação de modelos:** Processo de avaliar a adequação, efetividade e controles de um modelo.
+* **Modelo BV Financeira (MtM):** Modelo específico utilizado pelo Banco BV para fins de marcação a mercado (MtM).
+* **Governança de modelos:** Controles e processos relacionados ao desenvolvimento, implementação e uso de modelos.
+* **Metodologia do modelo:** Técnicas e métodos utilizados na construção do modelo.
+* **Documentação do modelo:** Descrição detalhada do modelo e de seus componentes.
+* **Dados de entrada do modelo:** Dados utilizados como *input* para o modelo.
+* **Monitoramento de modelos:** Processo de acompanhamento do desempenho do modelo após sua implementação.
+* **Classificação GEM:** Sistema de classificação do grau de exigência de monitoramento de um modelo.
+
+Em resumo, o documento apresenta uma análise completa do modelo ""BV Financeira (MtM)"", avaliando seus pontos fortes e fracos, e fornecendo recomendações para garantir sua acurácia, confiabilidade e efetividade.
+",MOD000181
+VM-106-2023 - Curva SOFR.pdf,"##  Relatório de Validação de Modelo - Curva SOFR (MOD000673)
+
+**Objetivo:** Validação inicial do modelo Curva SOFR (MOD000673).
+
+**Escopo da Validação:** Governança, Documentação, Dados de Entrada, Metodologia, Emprego do Modelo e Monitoramento.
+
+**Principais Pontos Abordados:**
+
+* **Objetivo do modelo:** Obter e estimar a ETTJ (Estrutura a Termo de Taxa de Juros) da taxa de referência SOFR, substituindo a Curva Libor dos EUA (MOD000543).
+* **Método:** Utilização da taxa ""Zero Coupon"" como taxa livre de risco para negociações Offshore e instrumentos atrelados ao fator de risco SOFR.
+* **Falha Identificada (Risco Médio):** Divergência na convenção da curva documentada (""Act/360 Linear"") e a utilizada no modelo (""Act/360 Exponencial"").
+* **Causa da Falha:** Configuração incorreta do código de bootstraping para construção de curvas com convenções exponenciais.
+* **Ação Tomada:** Correção do processo de bootstraping para a convenção adequada, mitigando o risco em tempo de validação.
+* **Observação de Governança:** Aprovação do modelo realizada por nível hierárquico inferior ao exigido (Superintendente em vez de Diretor).
+* **Classificação do Modelo:**
+    * **Risco:** Baixo (após mitigação).
+    * **GEM:** N3 (baixa exigibilidade de monitoramento).
+    * **Suficiência do Monitoramento:** Plenamente Satisfatório.
+
+**Conclusão:**
+
+* O modelo e seu entorno atendem aos objetivos após a mitigação da falha identificada.
+* A aprovação final do modelo depende da regularização da governança. 
+* O modelo apresenta baixo risco e baixa necessidade de monitoramento. 
+","* MOD000673
+* MOD000543 
+"
+VM-10-2023 - NDF USD_Cupom_Limpo.pdf,"O documento se trata de um Relatório de Validação de Modelo, referente a dois modelos utilizados para precificação e gestão de risco no mercado financeiro:
+
+**Modelo 1: NDF Currency Onshore Dólar Americano (MOD000304)**
+
+**Modelo 2: Curva de Cupom Cambial Limpo (USD) (MOD000579)**
+
+**Tópicos e Temas Abordados:**
+
+* **Objetivo da Validação:** Avaliar se os modelos e seus entornos atendem aos objetivos e requisitos estabelecidos, conforme metodologia interna (IN_706).
+* **Dimensões Avaliadas:** Governança, Documentação, Dados de Entrada, Metodologia, Emprego do Modelo e Monitoramento.
+* **Resultados da Validação:**
+    * **Modelo 1:** Classificado com nota ""A"", atendendo plenamente aos requisitos. 
+    * **Modelo 2:** Classificado com nota ""B"", atendendo aos requisitos com oportunidades de melhorias.
+* **Apontamentos:**
+    * **Modelo 1:** Um apontamento de risco baixo (R1), posteriormente mitigado durante a validação.
+    * **Modelo 2:**  Dois apontamentos de risco baixo (R2 e R3) e uma sugestão de melhoria (M1).
+* **Detalhamento dos Apontamentos:** Descrição detalhada de cada apontamento (R1, R2 e R3) e da sugestão de melhoria (M1), incluindo a situação encontrada, a potencial consequência e a recomendação de ação.
+* **Classificação GEM:** Avaliação do Grau de Essencialidade e Monitoramento (GEM) de cada modelo, com base em critérios como exigências regulatórias e impacto financeiro.
+* **Análise de Suficiência de Monitoramento:** Verificação da adequação dos processos de monitoramento dos modelos, com base na Resolução BCB nº 4.277.
+
+**Considerações Gerais:**
+
+* O relatório apresenta uma linguagem técnica, direcionada a profissionais da área de risco de mercado e validação de modelos.
+* A estrutura do documento é organizada e apresenta as informações de forma clara e objetiva.
+* O relatório demonstra a importância da validação de modelos para garantir a confiabilidade e a precisão das informações utilizadas na tomada de decisões. 
+","* MOD000304
+* MOD000579 
+"

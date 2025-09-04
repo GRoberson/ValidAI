@@ -1,0 +1,29 @@
+# 🚀 ValidAI Enhanced - Dependências
+
+# Core do ValidAI Enhanced
+gradio>=4.0.0
+google-genai>=0.3.0
+google-cloud-storage>=2.10.0
+vertexai>=1.38.0
+
+# Processamento de dados
+pandas>=2.0.0
+openpyxl>=3.1.0
+chardet>=5.0.0
+
+# Processamento de documentos
+nbformat>=5.7.0
+Markdown2docx>=0.1.0
+xhtml2pdf>=0.2.5
+
+# Utilitários
+python-dotenv>=1.0.0
+pathlib2>=2.3.7
+
+# Desenvolvimento (opcional)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Dependências originais do ValidAI
+pytz>=2023.3

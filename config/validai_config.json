@@ -1,0 +1,22 @@
+{
+  "project_id": "bv-cdip-des",
+  "location": "us-central1",
+  "modelo_versao": "gemini-1.5-pro-002",
+  "nome_exibicao": "ValidAI Enhanced",
+  "temperatura": 0.2,
+  "top_p": 0.8,
+  "max_output_tokens": 8000,
+  "time_sleep": 0.006,
+  "time_sleep_compare": 0.006,
+  "temp_dir": "./temp_files",
+  "historico_dir": "./historico_conversas",
+  "base_conhecimento_dir": "./base_conhecimento",
+  "tamanho_max_arquivo_mb": 50,
+  "max_arquivos_processo": 10,
+  "cache_ttl_segundos": 1800,
+  "cache_max_size": 1000,
+  "extensoes_permitidas": [
+    ".pdf", ".sas", ".ipynb", ".py", ".txt", ".csv", ".xlsx",
+    ".png", ".jpg", ".jpeg", ".mp4", ".md", ".json", ".yaml", ".yml"
+  ]
+}

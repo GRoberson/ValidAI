@@ -1,0 +1,296 @@
+# ===================================================================
+# 🛠️ RAG Enhanced - Development Requirements
+# ===================================================================
+# 
+# Dependências específicas para desenvolvimento, testes e debugging.
+# Instale junto com requirements.txt para ambiente completo de dev.
+#
+# Instalação:
+#   pip install -r requirements.txt -r requirements-dev.txt
+# ===================================================================
+
+# Incluir dependências principais
+-r requirements.txt
+
+# ===================================================================
+# 🧪 TESTES AVANÇADOS
+# ===================================================================
+
+# Frameworks de teste
+pytest>=7.4.0
+pytest-asyncio>=0.21.1
+pytest-cov>=4.1.0
+pytest-mock>=3.11.1
+pytest-xdist>=3.3.1
+pytest-html>=3.2.0
+pytest-benchmark>=4.0.0
+
+# Mocks e fixtures
+responses>=0.23.3
+httpretty>=1.1.4
+freezegun>=1.2.2
+factory-boy>=3.3.0
+Faker>=19.3.0
+
+# Cobertura de testes
+coverage>=7.2.7
+pytest-cov>=4.1.0
+
+# ===================================================================
+# 🔍 ANÁLISE DE CÓDIGO
+# ===================================================================
+
+# Linting
+flake8>=6.0.0
+pylint>=2.17.5
+bandit>=1.7.5
+safety>=2.3.5
+
+# Formatação
+black>=23.7.0
+isort>=5.12.0
+autopep8>=2.0.2
+yapf>=0.40.1
+
+# Type checking
+mypy>=1.5.1
+types-PyYAML>=6.0.12
+types-requests>=2.31.0
+types-python-dateutil>=2.8.19
+
+# Complexidade de código
+radon>=6.0.1
+xenon>=0.9.0
+mccabe>=0.7.0
+
+# ===================================================================
+# 🐛 DEBUGGING E PROFILING
+# ===================================================================
+
+# Debugging
+pdb++>=0.10.3
+ipdb>=0.13.13
+pudb>=2022.1.3
+
+# Profiling
+memory-profiler>=0.60.0
+line-profiler>=4.1.1
+py-spy>=0.3.14
+scalene>=1.5.26
+
+# Monitoring
+psutil>=5.9.5
+py-cpuinfo>=9.0.0
+
+# ===================================================================
+# 📊 ANÁLISE E RELATÓRIOS
+# ===================================================================
+
+# Visualização para desenvolvimento
+matplotlib>=3.7.2
+seaborn>=0.12.2
+plotly>=5.15.0
+
+# Análise de dados
+pandas>=2.0.3
+numpy>=1.25.1
+
+# Relatórios
+jinja2>=3.1.2
+weasyprint>=59.0
+
+# ===================================================================
+# 📝 DOCUMENTAÇÃO
+# ===================================================================
+
+# Sphinx
+sphinx>=7.1.2
+sphinx-rtd-theme>=1.3.0
+sphinx-autodoc-typehints>=1.24.0
+sphinx-copybutton>=0.5.2
+
+# MkDocs
+mkdocs>=1.5.2
+mkdocs-material>=9.1.21
+mkdocs-mermaid2-plugin>=1.1.1
+
+# Docstring tools
+pydocstyle>=6.3.0
+darglint>=1.8.1
+
+# ===================================================================
+# 🔧 FERRAMENTAS DE BUILD
+# ===================================================================
+
+# Empacotamento
+setuptools>=68.0.0
+wheel>=0.41.0
+build>=0.10.0
+twine>=4.0.2
+
+# Versionamento
+bump2version>=1.0.1
+versioneer>=0.29
+
+# ===================================================================
+# 🌐 DESENVOLVIMENTO WEB
+# ===================================================================
+
+# Desenvolvimento de interfaces
+gradio>=4.0.0
+streamlit>=1.25.0
+flask>=2.3.2
+fastapi>=0.101.0
+
+# Cliente HTTP para testes
+httpx>=0.24.1
+aiohttp>=3.8.5
+
+# ===================================================================
+# 📦 GERENCIAMENTO DE DEPENDÊNCIAS
+# ===================================================================
+
+# Análise de dependências
+pipdeptree>=2.13.0
+pip-audit>=2.6.1
+pip-check>=2.8.1
+
+# Ambientes virtuais
+virtualenv>=20.24.2
+pipenv>=2023.7.23
+
+# ===================================================================
+# 🎯 FERRAMENTAS ESPECÍFICAS
+# ===================================================================
+
+# Pre-commit hooks
+pre-commit>=3.3.3
+
+# Jupyter para prototipagem
+jupyter>=1.0.0
+jupyterlab>=4.0.5
+ipython>=8.14.0
+notebook>=7.0.0
+
+# ===================================================================
+# 🔒 SEGURANÇA EM DESENVOLVIMENTO
+# ===================================================================
+
+# Análise de segurança
+bandit>=1.7.5
+safety>=2.3.5
+semgrep>=1.34.0
+
+# Secrets detection
+detect-secrets>=1.4.0
+truffleHog>=2.2.1
+
+# ===================================================================
+# 🚀 PERFORMANCE E BENCHMARKING
+# ===================================================================
+
+# Benchmarking
+pytest-benchmark>=4.0.0
+asv>=0.6.1
+
+# Profiling avançado
+py-spy>=0.3.14
+austin>=3.4.0
+
+# ===================================================================
+# 🎨 QUALIDADE DE CÓDIGO
+# ===================================================================
+
+# Métricas de código
+radon>=6.0.1
+xenon>=0.9.0
+cohesion>=1.0.0
+
+# Análise de imports
+unimport>=0.16.0
+isort>=5.12.0
+
+# ===================================================================
+# 🔄 CI/CD E AUTOMAÇÃO
+# ===================================================================
+
+# GitHub Actions
+github3.py>=4.0.1
+
+# Automação
+invoke>=2.2.0
+fabric>=3.2.2
+
+# ===================================================================
+# 📈 MONITORAMENTO DE DESENVOLVIMENTO
+# ===================================================================
+
+# Logging avançado
+loguru>=0.7.0
+structlog>=23.1.0
+
+# Métricas
+prometheus-client>=0.17.1
+
+# ===================================================================
+# 🧩 UTILITÁRIOS DE DESENVOLVIMENTO
+# ===================================================================
+
+# Manipulação de arquivos
+watchdog>=3.0.0
+pathspec>=0.11.2
+
+# Utilitários diversos
+click>=8.1.6
+typer>=0.9.0
+rich>=13.5.2
+colorama>=0.4.6
+
+# ===================================================================
+# 🎮 FERRAMENTAS INTERATIVAS
+# ===================================================================
+
+# REPL melhorado
+ipython>=8.14.0
+ptpython>=3.0.23
+
+# Debugging interativo
+pdbpp>=0.10.3
+wdb>=3.3.0
+
+# ===================================================================
+# 📋 COMANDOS ÚTEIS PARA DESENVOLVIMENTO
+# ===================================================================
+#
+# 1. SETUP COMPLETO:
+#    pip install -r requirements.txt -r requirements-dev.txt
+#
+# 2. EXECUTAR TESTES:
+#    pytest --cov=rag_enhanced --cov-report=html
+#
+# 3. LINTING:
+#    flake8 rag_enhanced/
+#    pylint rag_enhanced/
+#    mypy rag_enhanced/
+#
+# 4. FORMATAÇÃO:
+#    black rag_enhanced/
+#    isort rag_enhanced/
+#
+# 5. ANÁLISE DE SEGURANÇA:
+#    bandit -r rag_enhanced/
+#    safety check
+#
+# 6. PROFILING:
+#    python -m memory_profiler script.py
+#    py-spy record -o profile.svg -- python script.py
+#
+# 7. DOCUMENTAÇÃO:
+#    sphinx-build -b html docs/ docs/_build/
+#    mkdocs serve
+#
+# 8. BUILD:
+#    python -m build
+#    twine check dist/*
+#
+# ===================================================================

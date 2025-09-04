@@ -1,0 +1,807 @@
+{
+  "resultados": {
+    "1_validacao_configuracao": {
+      "categoria": "validacao_configuracao",
+      "testes": [
+        {
+          "nome": "configuracao_valida",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [],
+            "details": {
+              "config_keys": [
+                "project_id",
+                "location",
+                "bucket_name",
+                "corpus_name",
+                "max_file_size_mb",
+                "timeout_seconds",
+                "retry_attempts"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "configuracao_invalida",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": false,
+            "errors": [
+              "Campo obrigatório vazio: project_id",
+              "location inválida: invalid-location. Deve ser uma das: asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-southeast1, asia-southeast2, australia-southeast1, europe-west1, europe-west2, europe-west3, europe-west4, europe-west6, us-central1, us-east1, us-east4, us-west1, us-west2, us-west3, us-west4",
+              "bucket_name deve seguir as regras do GCS: letras minúsculas, números, hífens e pontos, 3-63 caracteres",
+              "max_file_size_mb deve ser um número entre 1 e 100",
+              "timeout_seconds deve ser um número entre 1 e 300"
+            ],
+            "warnings": [
+              "Configuração opcional não definida: corpus_name"
+            ],
+            "details": {
+              "config_keys": [
+                "project_id",
+                "location",
+                "bucket_name",
+                "max_file_size_mb",
+                "timeout_seconds"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "configuracao_parcial",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [
+              "Configuração opcional não definida: bucket_name",
+              "Configuração opcional não definida: corpus_name",
+              "Configuração opcional não definida: max_file_size_mb"
+            ],
+            "details": {
+              "config_keys": [
+                "project_id",
+                "location"
+              ]
+            }
+          }
+        },
+        {
+          "nome": "configuracao_extensoes",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [
+              "Configuração opcional não definida: bucket_name",
+              "Configuração opcional não definida: corpus_name",
+              "Configuração opcional não definida: max_file_size_mb"
+            ],
+            "details": {
+              "config_keys": [
+                "project_id",
+                "location",
+                "supported_extensions"
+              ]
+            }
+          }
+        }
+      ],
+      "total": 4,
+      "sucessos": 4,
+      "taxa_sucesso": 1.0
+    },
+    "2_processamento_arquivos": {
+      "categoria": "processamento_arquivos",
+      "testes": [
+        {
+          "nome": "arquivo_0_python",
+          "sucesso": true,
+          "detalhes": {
+            "arquivo": "test_file_1_python_low.py",
+            "tamanho": 238,
+            "linguagem": "python",
+            "validacao": {
+              "is_valid": true,
+              "errors": [],
+              "warnings": [],
+              "details": {
+                "file_info": "test_file_1_python_low.py"
+              }
+            }
+          }
+        },
+        {
+          "nome": "arquivo_1_json",
+          "sucesso": true,
+          "detalhes": {
+            "arquivo": "test_file_2_json_low.json",
+            "tamanho": 145,
+            "linguagem": "json",
+            "validacao": {
+              "is_valid": true,
+              "errors": [],
+              "warnings": [],
+              "details": {
+                "file_info": "test_file_2_json_low.json"
+              }
+            }
+          }
+        },
+        {
+          "nome": "arquivo_2_java",
+          "sucesso": true,
+          "detalhes": {
+            "arquivo": "test_file_3_java_medium.java",
+            "tamanho": 1544,
+            "linguagem": "java",
+            "validacao": {
+              "is_valid": true,
+              "errors": [],
+              "warnings": [],
+              "details": {
+                "file_info": "test_file_3_java_medium.java"
+              }
+            }
+          }
+        },
+        {
+          "nome": "arquivo_3_python",
+          "sucesso": true,
+          "detalhes": {
+            "arquivo": "test_file_4_python_low.py",
+            "tamanho": 167,
+            "linguagem": "python",
+            "validacao": {
+              "is_valid": true,
+              "errors": [],
+              "warnings": [],
+              "details": {
+                "file_info": "test_file_4_python_low.py"
+              }
+            }
+          }
+        },
+        {
+          "nome": "arquivo_4_python",
+          "sucesso": true,
+          "detalhes": {
+            "arquivo": "test_file_5_python_high.py",
+            "tamanho": 4463,
+            "linguagem": "python",
+            "validacao": {
+              "is_valid": true,
+              "errors": [],
+              "warnings": [],
+              "details": {
+                "file_info": "test_file_5_python_high.py"
+              }
+            }
+          }
+        },
+        {
+          "nome": "listagem_arquivos_python",
+          "sucesso": true,
+          "detalhes": {
+            "arquivos_encontrados": 3
+          }
+        },
+        {
+          "nome": "leitura_arquivo",
+          "sucesso": true,
+          "detalhes": {
+            "tamanho_lido": 238
+          }
+        }
+      ],
+      "total": 7,
+      "sucessos": 7,
+      "taxa_sucesso": 1.0
+    },
+    "3_analise_codigo": {
+      "categoria": "analise_codigo",
+      "testes": [
+        {
+          "nome": "analise_codigo_python",
+          "sucesso": true,
+          "detalhes": {
+            "linguagem": "python",
+            "linhas_total": 37,
+            "linhas_codigo": 28,
+            "tem_funcoes": true,
+            "tem_classes": true,
+            "tem_comentarios": true,
+            "tamanho_kb": 0.9970703125
+          }
+        },
+        {
+          "nome": "analise_codigo_javascript",
+          "sucesso": true,
+          "detalhes": {
+            "linguagem": "javascript",
+            "linhas_total": 36,
+            "linhas_codigo": 28,
+            "tem_funcoes": false,
+            "tem_classes": true,
+            "tem_comentarios": true,
+            "tamanho_kb": 0.8359375
+          }
+        },
+        {
+          "nome": "analise_codigo_java",
+          "sucesso": true,
+          "detalhes": {
+            "linguagem": "java",
+            "linhas_total": 50,
+            "linhas_codigo": 40,
+            "tem_funcoes": true,
+            "tem_classes": true,
+            "tem_comentarios": false,
+            "tamanho_kb": 1.51171875
+          }
+        },
+        {
+          "nome": "deteccao_padroes_python",
+          "sucesso": true,
+          "detalhes": {
+            "tratamento_erro": true,
+            "metodos_privados": true,
+            "docstrings": false,
+            "type_hints": false
+          }
+        }
+      ],
+      "total": 4,
+      "sucessos": 4,
+      "taxa_sucesso": 1.0
+    },
+    "4_geracao_dados": {
+      "categoria": "geracao_dados",
+      "testes": [
+        {
+          "nome": "geracao_arquivos_codigo",
+          "sucesso": true,
+          "detalhes": {
+            "arquivos_gerados": 10,
+            "linguagens": [
+              "markdown",
+              "python",
+              "javascript",
+              "json",
+              "java"
+            ],
+            "complexidades": [
+              "medium",
+              "low",
+              "high"
+            ],
+            "tamanho_medio": 2852.8
+          }
+        },
+        {
+          "nome": "geracao_documentacao",
+          "sucesso": true,
+          "detalhes": {
+            "documentos_gerados": 5,
+            "tipos": [
+              "FAQ",
+              "README",
+              "API",
+              "TUTORIAL",
+              "CHANGELOG"
+            ],
+            "tamanho_total": 2703
+          }
+        },
+        {
+          "nome": "geracao_queries",
+          "sucesso": true,
+          "detalhes": {
+            "queries_geradas": 20,
+            "categorias": [
+              "general",
+              "comparison",
+              "how_to",
+              "example"
+            ],
+            "linguagens": [
+              "markdown",
+              "javascript",
+              "java",
+              "json",
+              "python"
+            ],
+            "tamanho_medio": 34.5
+          }
+        },
+        {
+          "nome": "geracao_configuracoes",
+          "sucesso": true,
+          "detalhes": {
+            "configs_geradas": 3,
+            "tipos": [
+              ".json",
+              ".yaml",
+              ""
+            ],
+            "tamanhos": [
+              353,
+              425,
+              514
+            ]
+          }
+        },
+        {
+          "nome": "geracao_cenarios_erro",
+          "sucesso": true,
+          "detalhes": {
+            "cenarios_gerados": 5,
+            "tipos_erro": [
+              "AuthenticationError",
+              "FileNotFoundError",
+              "NetworkError",
+              "PermissionError",
+              "QuotaError"
+            ],
+            "nomes": [
+              "network_timeout",
+              "invalid_credentials",
+              "quota_exceeded",
+              "file_not_found",
+              "insufficient_permissions"
+            ]
+          }
+        }
+      ],
+      "total": 5,
+      "sucessos": 5,
+      "taxa_sucesso": 1.0
+    },
+    "5_validacao_estruturas": {
+      "categoria": "validacao_estruturas",
+      "testes": [
+        {
+          "nome": "validacao_json_valido",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [],
+            "details": {}
+          }
+        },
+        {
+          "nome": "validacao_json_invalido",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": false,
+            "errors": [
+              "JSON inválido: Expecting value: line 1 column 29 (char 28)"
+            ],
+            "warnings": [],
+            "details": {}
+          }
+        },
+        {
+          "nome": "validacao_resultado_processamento",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [],
+            "details": {}
+          }
+        },
+        {
+          "nome": "validacao_resultado_query",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [],
+            "details": {}
+          }
+        },
+        {
+          "nome": "validacao_metricas_performance",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [],
+            "details": {
+              "metrics_count": 5
+            }
+          }
+        },
+        {
+          "nome": "validacao_lote_resultados",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": true,
+            "errors": [],
+            "warnings": [
+              "Taxa de sucesso moderada: 75.0%"
+            ],
+            "details": {
+              "batch_size": 4,
+              "success_count": 3,
+              "error_count": 1,
+              "success_rate": 0.75
+            }
+          }
+        }
+      ],
+      "total": 6,
+      "sucessos": 6,
+      "taxa_sucesso": 1.0
+    },
+    "6_simulacao_cenarios": {
+      "categoria": "simulacao_cenarios",
+      "testes": [
+        {
+          "nome": "cenario_normal",
+          "sucesso": false,
+          "detalhes": {
+            "erro": "'MockCloudStorage' object has no attribute 'upload_blob'"
+          }
+        },
+        {
+          "nome": "cenario_alta_latencia",
+          "sucesso": false,
+          "detalhes": {
+            "erro": "MockVertexAI.generate_content() missing 1 required positional argument: 'contents'"
+          }
+        },
+        {
+          "nome": "cenario_problemas_rede",
+          "sucesso": false,
+          "detalhes": {
+            "sucessos": 0,
+            "falhas": 10,
+            "taxa_falha": 1.0
+          }
+        },
+        {
+          "nome": "cenario_rate_limiting",
+          "sucesso": true,
+          "detalhes": {
+            "sucessos": 0,
+            "falhas": 15,
+            "rate_limit_ativado": true
+          }
+        },
+        {
+          "nome": "estatisticas_mocks",
+          "sucesso": true,
+          "detalhes": {
+            "storage": {
+              "buckets_count": 1,
+              "total_blobs": 0,
+              "operations": 1,
+              "uploads": 0,
+              "downloads": 0,
+              "errors": 0
+            },
+            "vertex_ai": {
+              "corpora_count": 0,
+              "query_count": 0,
+              "operations": 0
+            },
+            "error_simulation": {
+              "enabled": false,
+              "network_issues": false,
+              "auth_issues": false,
+              "rate_limiting": false
+            },
+            "timestamp": "2025-09-03T20:19:38.247258"
+          }
+        }
+      ],
+      "total": 5,
+      "sucessos": 2,
+      "taxa_sucesso": 0.4
+    },
+    "7_sistema_arquivos": {
+      "categoria": "sistema_arquivos",
+      "testes": [
+        {
+          "nome": "criar_ler_arquivo",
+          "sucesso": true,
+          "detalhes": {
+            "tamanho_original": 67,
+            "tamanho_lido": 67,
+            "conteudo_igual": true
+          }
+        },
+        {
+          "nome": "listar_arquivos",
+          "sucesso": false,
+          "detalhes": {
+            "arquivos_criados": 5,
+            "arquivos_listados": 8,
+            "arquivos": [
+              "/test/test_file_1_python_low.py",
+              "/test/test_file_4_python_low.py",
+              "/test/test_file_5_python_high.py",
+              "/test/arquivo_0.py",
+              "/test/arquivo_1.py",
+              "/test/arquivo_2.py",
+              "/test/arquivo_3.py",
+              "/test/arquivo_4.py"
+            ]
+          }
+        },
+        {
+          "nome": "verificar_existencia",
+          "sucesso": true,
+          "detalhes": {
+            "arquivo_real_existe": true,
+            "arquivo_inexistente_existe": false
+          }
+        },
+        {
+          "nome": "informacoes_arquivo",
+          "sucesso": true,
+          "detalhes": {
+            "content": "Este é um arquivo de teste\ncom múltiplas linhas\ne conteúdo variado.",
+            "size": 70,
+            "created_at": "2025-09-03 20:19:38.247258",
+            "modified_at": "2025-09-03 20:19:38.247258"
+          }
+        },
+        {
+          "nome": "deletar_arquivo",
+          "sucesso": true,
+          "detalhes": {
+            "operacao_delete": true,
+            "arquivo_ainda_existe": false
+          }
+        }
+      ],
+      "total": 5,
+      "sucessos": 4,
+      "taxa_sucesso": 0.8
+    },
+    "8_performance_local": {
+      "categoria": "performance_local",
+      "testes": [
+        {
+          "nome": "performance_geracao_dados",
+          "sucesso": true,
+          "detalhes": {
+            "arquivos_gerados": 50,
+            "tempo_segundos": 0.0004968643188476562,
+            "arquivos_por_segundo": 100631.09404990403
+          }
+        },
+        {
+          "nome": "performance_validacao",
+          "sucesso": true,
+          "detalhes": {
+            "configs_validadas": 100,
+            "validacoes_ok": 100,
+            "tempo_segundos": 0.0,
+            "validacoes_por_segundo": 0
+          }
+        },
+        {
+          "nome": "performance_mocks",
+          "sucesso": true,
+          "detalhes": {
+            "operacoes_tentadas": 100,
+            "operacoes_ok": 0,
+            "tempo_segundos": 0.0005002021789550781,
+            "operacoes_por_segundo": 199919.16110581506
+          }
+        },
+        {
+          "nome": "performance_analise_codigo",
+          "sucesso": true,
+          "detalhes": {
+            "linhas_analisadas": 142,
+            "funcoes_encontradas": 10,
+            "classes_encontradas": 3,
+            "comentarios_encontrados": 7,
+            "tempo_segundos": 0.0,
+            "linhas_por_segundo": 0
+          }
+        }
+      ],
+      "total": 4,
+      "sucessos": 4,
+      "taxa_sucesso": 1.0
+    },
+    "9_tratamento_erros": {
+      "categoria": "tratamento_erros",
+      "testes": [
+        {
+          "nome": "erro_arquivo_nao_encontrado",
+          "sucesso": true,
+          "detalhes": {
+            "erro_capturado": "FileNotFoundError"
+          }
+        },
+        {
+          "nome": "validacao_dados_invalidos",
+          "sucesso": true,
+          "detalhes": {
+            "validacao_falhou": true,
+            "erros_encontrados": 2,
+            "erros": [
+              "Campo obrigatório vazio: project_id",
+              "location inválida: 123. Deve ser uma das: asia-east1, asia-east2, asia-northeast1, asia-northeast2, asia-northeast3, asia-south1, asia-southeast1, asia-southeast2, australia-southeast1, europe-west1, europe-west2, europe-west3, europe-west4, europe-west6, us-central1, us-east1, us-east4, us-west1, us-west2, us-west3, us-west4"
+            ]
+          }
+        },
+        {
+          "nome": "mock_alta_taxa_falha",
+          "sucesso": true,
+          "detalhes": {
+            "falhas_capturadas": 20,
+            "sucessos_inesperados": 0,
+            "taxa_falha_real": 1.0
+          }
+        },
+        {
+          "nome": "json_malformado",
+          "sucesso": true,
+          "detalhes": {
+            "is_valid": false,
+            "errors": [
+              "JSON inválido: Expecting value: line 1 column 28 (char 27)"
+            ],
+            "warnings": [],
+            "details": {}
+          }
+        },
+        {
+          "nome": "cenarios_erro_predefinidos",
+          "sucesso": true,
+          "detalhes": {
+            "cenarios_gerados": 5,
+            "tipos_esperados": [
+              "NetworkError",
+              "AuthenticationError",
+              "ValidationError"
+            ],
+            "tipos_encontrados": [
+              "NetworkError",
+              "AuthenticationError",
+              "QuotaError",
+              "FileNotFoundError",
+              "PermissionError"
+            ]
+          }
+        }
+      ],
+      "total": 5,
+      "sucessos": 5,
+      "taxa_sucesso": 1.0
+    },
+    "10_utilitarios": {
+      "categoria": "utilitarios",
+      "testes": [
+        {
+          "nome": "geracao_perfil_config",
+          "sucesso": false,
+          "detalhes": {
+            "nome_perfil": null,
+            "tem_settings": false,
+            "campos_settings": []
+          }
+        },
+        {
+          "nome": "dados_performance",
+          "sucesso": true,
+          "detalhes": {
+            "campos": [
+              "file_sizes",
+              "query_loads",
+              "expected_response_times"
+            ],
+            "tem_file_sizes": true,
+            "tem_query_loads": true
+          }
+        },
+        {
+          "nome": "criacao_dados_teste_mock",
+          "sucesso": true,
+          "detalhes": {
+            "arquivos_criados": 5,
+            "nomes_arquivos": [
+              "test_file_0.py",
+              "test_file_1.py",
+              "test_file_2.py",
+              "test_file_3.py",
+              "test_file_4.py"
+            ],
+            "tamanhos": [
+              249,
+              249,
+              249,
+              249,
+              249
+            ]
+          }
+        },
+        {
+          "nome": "estatisticas_mocks_atualizadas",
+          "sucesso": true,
+          "detalhes": {
+            "buckets_antes": 1,
+            "buckets_depois": 2,
+            "corpora_antes": 0,
+            "corpora_depois": 0
+          }
+        },
+        {
+          "nome": "reset_mocks",
+          "sucesso": true,
+          "detalhes": {
+            "buckets_apos_reset": 0,
+            "corpora_apos_reset": 0
+          }
+        }
+      ],
+      "total": 5,
+      "sucessos": 4,
+      "taxa_sucesso": 0.8
+    }
+  },
+  "estatisticas": {
+    "total_categorias": 10,
+    "total_testes": 50,
+    "total_sucessos": 45,
+    "total_falhas": 5,
+    "taxa_sucesso_geral": 0.9,
+    "tempo_total_segundos": 0.10557937622070312,
+    "tempo_medio_por_teste": 0.0021115875244140624,
+    "categorias": {
+      "1_validacao_configuracao": {
+        "taxa_sucesso": 1.0,
+        "testes": 4
+      },
+      "2_processamento_arquivos": {
+        "taxa_sucesso": 1.0,
+        "testes": 7
+      },
+      "3_analise_codigo": {
+        "taxa_sucesso": 1.0,
+        "testes": 4
+      },
+      "4_geracao_dados": {
+        "taxa_sucesso": 1.0,
+        "testes": 5
+      },
+      "5_validacao_estruturas": {
+        "taxa_sucesso": 1.0,
+        "testes": 6
+      },
+      "6_simulacao_cenarios": {
+        "taxa_sucesso": 0.4,
+        "testes": 5
+      },
+      "7_sistema_arquivos": {
+        "taxa_sucesso": 0.8,
+        "testes": 5
+      },
+      "8_performance_local": {
+        "taxa_sucesso": 1.0,
+        "testes": 4
+      },
+      "9_tratamento_erros": {
+        "taxa_sucesso": 1.0,
+        "testes": 5
+      },
+      "10_utilitarios": {
+        "taxa_sucesso": 0.8,
+        "testes": 5
+      }
+    }
+  },
+  "executado_em": "2025-09-03 20:19:38",
+  "tempo_total": 0.10557937622070312
+}

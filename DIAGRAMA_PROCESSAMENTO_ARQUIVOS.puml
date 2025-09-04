@@ -1,0 +1,184 @@
+@startuml ValidAI Enhanced - Processamento de Arquivos
+
+!theme cerulean-outline
+title ValidAI Enhanced - Fluxos de Processamento por Tipo de Arquivo
+
+actor Usuario as "👤 Usuário"
+participant Interface as "🌐 Interface"
+participant ChatMultimodal as "🤖 Chat Multimodal"
+participant SecurityValidator as "🔒 Validador Segurança"
+participant FileProcessor as "📁 Processador Arquivos"
+participant DataManager as "📄 Data Manager"
+participant Gemini as "🔮 Gemini API"
+
+== Upload e Validação Inicial ==
+
+Usuario -> Interface: Upload arquivo(s)
+Interface -> ChatMultimodal: message + files[]
+ChatMultimodal -> SecurityValidator: validate_file_security(arquivo)
+
+alt Arquivo válido
+    SecurityValidator --> ChatMultimodal: ✅ Validação OK
+else Arquivo inválido  
+    SecurityValidator --> ChatMultimodal: ❌ Erro de segurança
+    ChatMultimodal --> Interface: Mensagem de erro
+    Interface --> Usuario: "Arquivo rejeitado"
+    return
+end
+
+== Processamento por Tipo de Arquivo ==
+
+ChatMultimodal -> FileProcessor: Determinar tipo do arquivo
+
+alt Arquivos de Código (.py, .sas, .ipynb)
+    
+    FileProcessor -> FileProcessor: process_code_file()
+    
+    alt Arquivo Python (.py)
+        FileProcessor -> DataManager: convert_python()
+        DataManager -> DataManager: Ler arquivo como texto
+        DataManager --> FileProcessor: Código em string
+        
+    else Arquivo SAS (.sas)
+        FileProcessor -> DataManager: converte_sas()
+        DataManager -> DataManager: Processar sintaxe SAS
+        DataManager --> FileProcessor: Código convertido
+        
+    else Jupyter Notebook (.ipynb)
+        FileProcessor -> DataManager: convert_notebook_text()
+        DataManager -> DataManager: Extrair células de código
+        DataManager -> DataManager: Converter markdown
+        DataManager --> FileProcessor: Notebook como texto
+    end
+    
+    FileProcessor --> ChatMultimodal: codigo_extraido
+    ChatMultimodal -> ChatMultimodal: Preparar prompt de análise
+    ChatMultimodal -> Gemini: Analisar código + pergunta_usuario
+    
+else Documentos PDF (.pdf)
+    
+    FileProcessor -> FileProcessor: process_pdf_file()
+    FileProcessor -> DataManager: converte_pdf()
+    DataManager -> DataManager: Extrair texto do PDF
+    DataManager -> DataManager: Preservar formatação
+    DataManager --> FileProcessor: Texto do documento
+    FileProcessor --> ChatMultimodal: conteudo_pdf
+    ChatMultimodal -> Gemini: Documento + prompt_analise
+    
+else Imagens (.png, .jpg, .jpeg)
+    
+    FileProcessor -> FileProcessor: process_image_file()
+    FileProcessor -> DataManager: convert_png_to_base64()
+    DataManager -> DataManager: Converter imagem para base64
+    DataManager --> FileProcessor: Imagem codificada
+    FileProcessor --> ChatMultimodal: imagem_base64
+    ChatMultimodal -> Gemini: Imagem + "Descreva o conteúdo"
+    
+else Arquivos Excel (.xlsx)
+    
+    FileProcessor -> FileProcessor: process_excel_file()
+    FileProcessor -> DataManager: get_abas()
+    DataManager -> DataManager: Listar worksheets
+    DataManager --> FileProcessor: lista_abas[]
+    
+    alt Múltiplas abas
+        FileProcessor --> ChatMultimodal: Solicitar seleção de aba
+        ChatMultimodal --> Interface: "Qual aba importar?"
+        Interface --> Usuario: Lista de abas disponíveis
+        Usuario -> Interface: Seleção da aba
+        Interface -> ChatMultimodal: aba_selecionada
+        
+        ChatMultimodal -> FileProcessor: process_excel_sheet(arquivo, aba)
+        FileProcessor -> DataManager: convert_excel(arquivo, aba)
+        DataManager -> DataManager: Converter aba para texto
+        DataManager --> FileProcessor: dados_tabulares
+        
+    else Uma aba apenas
+        FileProcessor -> DataManager: convert_excel(arquivo, aba[0])
+        DataManager --> FileProcessor: dados_tabulares
+    end
+    
+    FileProcessor --> ChatMultimodal: tabela_processada
+    ChatMultimodal -> Gemini: Dados + prompt_analise
+    
+else Arquivos CSV (.csv)
+    
+    FileProcessor -> FileProcessor: process_csv_file()
+    FileProcessor -> DataManager: convert_csv()
+    DataManager -> DataManager: Ler CSV e formatar
+    DataManager --> FileProcessor: dados_csv
+    FileProcessor --> ChatMultimodal: tabela_csv
+    ChatMultimodal -> Gemini: CSV + prompt_analise
+    
+else Arquivos de Texto (.txt)
+    
+    FileProcessor -> FileProcessor: process_text_file()
+    FileProcessor -> DataManager: convert_python()
+    DataManager -> DataManager: Ler como texto simples
+    DataManager --> FileProcessor: conteudo_texto
+    FileProcessor --> ChatMultimodal: texto_extraido
+    ChatMultimodal -> Gemini: Texto + pergunta_usuario
+    
+else Vídeos (.mp4)
+    
+    FileProcessor -> FileProcessor: process_video_file()
+    FileProcessor -> DataManager: converte_video()
+    DataManager -> DataManager: Extrair frames/áudio
+    DataManager --> FileProcessor: video_processado
+    FileProcessor --> ChatMultimodal: video_base64
+    ChatMultimodal -> Gemini: Vídeo + prompt_analise
+    
+else Tipo não suportado
+    
+    FileProcessor --> ChatMultimodal: "Arquivo não suportado"
+    ChatMultimodal --> Interface: Mensagem de erro
+    Interface --> Usuario: "Tipo de arquivo não permitido"
+    return
+    
+end
+
+== Processamento da Resposta ==
+
+activate Gemini
+Gemini -> Gemini: Processar com modelo configurado
+Gemini -> Gemini: Aplicar system instruction
+Gemini -> Gemini: Usar configurações (temperatura, tokens)
+Gemini --> ChatMultimodal: Stream de resposta
+deactivate Gemini
+
+ChatMultimodal -> ChatMultimodal: Processar chunks em tempo real
+loop Para cada chunk
+    ChatMultimodal -> Interface: chunk_texto (com delay configurável)
+    Interface -> Usuario: Exibir texto gradualmente
+end
+
+ChatMultimodal -> ChatMultimodal: Adicionar resposta ao contexto
+ChatMultimodal --> Interface: Resposta completa
+Interface --> Usuario: Conversa atualizada
+
+== Múltiplos Arquivos ==
+
+note over Usuario, Gemini
+  **Para múltiplos arquivos (até 10):**
+  • Processar cada arquivo sequencialmente
+  • Concatenar códigos com identificadores
+  • Aplicar limite de tamanho total
+  • Usar prompt específico para múltiplos arquivos
+end note
+
+alt Múltiplos arquivos de código
+    loop Para cada arquivo (max 10)
+        ChatMultimodal -> FileProcessor: process_code_file(arquivo[i])
+        FileProcessor --> ChatMultimodal: codigo_i
+        ChatMultimodal -> ChatMultimodal: Concatenar códigos
+    end
+    ChatMultimodal -> Gemini: "Analise os códigos fornecidos"
+    
+else Arquivo muito grande
+    ChatMultimodal --> Interface: "Arquivo excede limite de 50MB"
+    
+else Muitos arquivos
+    ChatMultimodal --> Interface: "Máximo 10 arquivos simultâneos"
+end
+
+@enduml

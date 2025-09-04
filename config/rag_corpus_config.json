@@ -1,0 +1,65 @@
+{
+  "instrucoes_normativas": {
+    "nome": "Instruções Normativas",
+    "descricao": "INs 706 (Validação de Modelos), 1253 (Framework GRM) e 1146 (Controles Internos)",
+    "diretorio_local": "base_conhecimento/ins",
+    "bucket_path": "validai-rag/ins",
+    "tipos_arquivo": [".pdf", ".txt", ".md"],
+    "ativo": true,
+    "corpus_id": null
+  },
+  "validacoes_mercado": {
+    "nome": "Validações de Risco de Mercado",
+    "descricao": "Relatórios e documentos de validação de modelos de risco de mercado",
+    "diretorio_local": "base_conhecimento/mercado",
+    "bucket_path": "validai-rag/mercado",
+    "tipos_arquivo": [".pdf", ".txt", ".md", ".docx"],
+    "ativo": true,
+    "corpus_id": null
+  },
+  "validacoes_credito": {
+    "nome": "Validações de Risco de Crédito",
+    "descricao": "Relatórios e documentos de validação de modelos de risco de crédito",
+    "diretorio_local": "base_conhecimento/credito",
+    "bucket_path": "validai-rag/credito",
+    "tipos_arquivo": [".pdf", ".txt", ".md", ".docx"],
+    "ativo": true,
+    "corpus_id": null
+  },
+  "metodologias_gerais": {
+    "nome": "Metodologias e Frameworks",
+    "descricao": "Documentos sobre metodologias de validação, frameworks e boas práticas",
+    "diretorio_local": "base_conhecimento/metodologias",
+    "bucket_path": "validai-rag/metodologias",
+    "tipos_arquivo": [".pdf", ".txt", ".md"],
+    "ativo": true,
+    "corpus_id": null
+  },
+  "casos_uso": {
+    "nome": "Casos de Uso e Exemplos",
+    "descricao": "Exemplos práticos, casos de uso e templates de validação",
+    "diretorio_local": "base_conhecimento/casos_uso",
+    "bucket_path": "validai-rag/casos_uso",
+    "tipos_arquivo": [".pdf", ".txt", ".md", ".ipynb"],
+    "ativo": true,
+    "corpus_id": null
+  },
+  "regulamentacoes": {
+    "nome": "Regulamentações e Normas",
+    "descricao": "Documentos regulatórios, normas do Banco Central e legislação aplicável",
+    "diretorio_local": "base_conhecimento/regulamentacoes",
+    "bucket_path": "validai-rag/regulamentacoes",
+    "tipos_arquivo": [".pdf", ".txt", ".md"],
+    "ativo": true,
+    "corpus_id": null
+  },
+  "benchmarks": {
+    "nome": "Benchmarks e Comparações",
+    "descricao": "Estudos comparativos, benchmarks de modelos e análises de mercado",
+    "diretorio_local": "base_conhecimento/benchmarks",
+    "bucket_path": "validai-rag/benchmarks",
+    "tipos_arquivo": [".pdf", ".txt", ".md", ".xlsx", ".csv"],
+    "ativo": false,
+    "corpus_id": null
+  }
+}

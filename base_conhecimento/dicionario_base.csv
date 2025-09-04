@@ -1,0 +1,163 @@
+Nome,Resumo
+IN_706_validacao_modelos.pdf,"## Tópicos e Temas Abordados no Documento ""IN_706 Validação de Modelos"":
+
+**Parte 1: Gestão de Risco de Modelos:**
+
+* **1.1 Escopo:** Define as responsabilidades da Área de Gestão de Risco de Modelos, incluindo fornecer opinião especializada sobre riscos de modelos, difundir a cultura de gestão de riscos, desenvolver metodologia corporativa, reportar indicadores, avaliar a suficiência de monitoramentos, gerir o inventário de modelos e prestar consultoria técnica.
+* **1.2 Definições:** Esclarecimento de termos como ""Modelos"", ""Validação de Modelos"", ""Monitoramento de Modelos"", ""Status de Monitoramento de Modelos"", ""Acompanhamento de Monitoramento de Modelos"", ""Análise de Suficiência de Monitoramento de Modelo"" e ""Inventário Corporativo (sistema GRC)"".
+* **1.3 Independência:** Reitera a independência da Área de Gestão de Risco de Modelos em relação às áreas gestoras e usuárias de modelos, respondendo diretamente ao Diretor de Riscos.
+
+**Parte 2: Atribuições e Responsabilidades:**
+
+* **2.1 Gestão de Risco de Modelos:** Detalha as funções da área, como validar modelos, avaliar a suficiência do monitoramento, fornecer suporte às áreas de desenvolvimento, definir prioridades, acompanhar monitoramentos, analisar justificativas de revisão de status, consolidar e reportar o status dos modelos, conduzir o monitoramento de performance, comunicar indicadores e conclusões, avaliar alertas e planos de ação, sugerir novos modelos, analisar metodologias, divulgar relatórios, validar continuamente, apresentar resultados e avaliar riscos e planos de ação.
+* **2.2 Áreas Gestoras dos Modelos:** Define as responsabilidades das áreas que gerenciam os modelos, incluindo disponibilizar informações, informar sobre alterações, elaborar planos de ação e implementar os planos.
+
+**Parte 3: Monitoramento de Modelos:**
+
+* **3.1 Objetivo:** Aborda o objetivo do monitoramento de modelos, que visa acompanhar a performance e complementar o processo de validação.
+* **3.2 Critérios:** Define que todos os modelos devem ser monitorados pela área gestora, utilizando metodologia e critérios adequados, com triggers pré-definidos em 3 níveis de ação (Verde, Amarelo e Vermelho).
+* **3.3 Análise de Suficiência:** Explica a análise de suficiência do monitoramento, dividida em avaliação do modelo e do próprio monitoramento, utilizando uma matriz de classificação.
+
+**Parte 4: Abertura dos Trabalhos:**
+
+* **4.1 Regras de Atuação:** Define as regras para planejamento e início dos trabalhos de validação, com base na classificação dos modelos, utilizando uma carta de abertura formal.
+* **4.2 Metodologia de Análise:** Apresenta a metodologia de análise de validação, baseada em pilares como documentação, modelagem, dados, emprego do modelo, governança e monitoramento, com diferentes níveis de profundidade.
+* **4.3 Identificação de Apontamentos:** Define como são identificados e classificados os apontamentos de riscos, utilizando a matriz de risco de modelos.
+
+**Parte 5: Fechamento do Trabalho:**
+
+* **5.1 Documentação e Formalização de Resultados:** Explica como são formalizados os resultados da validação, utilizando Memorando Técnico de Validação (MTV) ou Relatório de Validação de Modelos (VM), incluindo informações sobre conteúdo e formato.
+
+**Parte 6: Validação Contínua:**
+
+* **6.1 Critérios Específicos:** Define a validação contínua, realizada trimestralmente, com base em indicadores de deterioração ou evolução do modelo.
+
+**Parte 7: Verificação das Estratégias de Concessão de Crédito Varejo:**
+
+* **7.1 Critérios Específicos:** Aborda a verificação das alterações nas políticas de crédito, utilizando os métodos de ciência (apresentação formal) ou anuência (não oposição à alteração), com detalhes sobre cada método.
+
+**Parte 8: Referências:**
+
+* Lista as normas e documentos que servem de base para o conteúdo apresentado.
+
+**Parte 9: Glossário:**
+
+* Define termos técnicos utilizados no documento. 
+"
+IN_1253_Gestao_Risco_Modelos.pdf,"O documento descreve um framework para a gestão de riscos de modelos, incluindo sistemas de inteligência artificial, no Conglomerado Financeiro Votorantim. Abaixo estão os tópicos e temas abordados:
+
+**1. Gestão de Risco de Modelos - Framework**
+
+* **Definições:**
+    * Modelo
+    * Sistemas e Abordagens de Inteligência Artificial
+    * Risco de Modelos
+    * Inventário de Modelos
+    * Inventário Corporativo
+    * Classificação de Modelos
+    * Validação de Modelos
+    * Monitoramento de Modelos
+* **Princípios para Modelos e Sistemas de Inteligência Artificial:**
+    * Respeito às Leis
+    * Funcionamento Transparente
+    * Inventário e Rastreio de Modelos
+    * Qualidade do Conteúdo de Modelos
+    * Proteção Contra Viés Discriminatório
+
+**2. Atividades Relacionadas ao Modelo:**
+
+* Desenvolvimento de Modelo
+* Inventário de Modelo
+* Validação de Modelo
+* Aprovação de Modelo
+* Utilização do Modelo
+* Monitoramento do Modelo
+* Análise de Suficiência de Monitoramento do Modelo
+* Gerenciamento do Modelo
+* Gerenciamento do Framework de Risco de Modelos
+
+**3. Deliberações sobre Risco de Modelos:**
+
+* Critério Específico
+* Deliberações sobre Modelos e Sistemas de Inteligência Artificial
+
+**4. Classificação de Modelos:**
+
+* Definição
+* Materialidade
+* Impacto em Decisão
+* Complexidade
+* Matriz de Classificação de Modelos
+* Alçada de Classificação de Modelos
+
+**5. Governança de Modelo:**
+
+* Inventariamento de Modelos
+* Níveis de Aprovação
+
+**6. Atribuições e Responsabilidades dos Papéis Envolvidos:**
+
+* Gestor do Modelo
+* Desenvolvedor do Modelo
+* Usuário de Modelo
+* Validador de Modelo
+* Gestor do Framework 
+"
+IN_1146_controles_internos.pdf,"## Tópicos e Temas Abordados no Documento ""Sistema de Controles Internos - Framework"":
+
+**Parte 1: Introdução e Definições**
+
+1. **Objetivo:** Estabelecer regras, responsabilidades e escopo do Sistema de Controles Internos.
+2. **Sistema de Controles Internos:**
+    * Definição e importância.
+    * Composição e interação entre as áreas (3 linhas de defesa).
+3. **Gerenciamento de Riscos:**
+    * Modelos de referência (COSO ERM e COBIT).
+    * Tratamento e classificação de informações.
+    * Atingimento dos objetivos (desempenho, informação e conformidade).
+
+**Parte 2: Linhas de Defesa**
+
+4. **Conceito das 3 Linhas de Defesa:**
+    * Responsabilidades e interação entre as áreas.
+    * Limites de interação entre as áreas da 2ª linha.
+5. **Definição e Responsabilidades das Linhas de Defesa:**
+    * Conceito de Dos e Dont's e a Cartilha.
+    * **Primeira Linha:** Responsabilidades e ações no dia a dia.
+    * **Segunda Linha:** Suporte à gestão de riscos, avaliação e monitoramento.
+    * **Terceira Linha:** Avaliação independente da efetividade das ações.
+
+**Parte 3: Processo de Avaliação e Gestão de Riscos**
+
+6. **Identificação e Priorização de Riscos:**
+    * Entendimento do ambiente de negócio e estrutura de controles.
+    * Ferramentas: Calculadora de Riscos, Anotação de Risco, Self Assessment e Heatmap.
+7. **Monitoramento e Controles:**
+    * Ações da 1ª e 2ª linha para acompanhamento contínuo dos riscos.
+    * Rating de diligência e indicadores de risco.
+8. **Avaliação de Riscos e Controles:**
+    * Testes de controles e acompanhamento das anotações de risco.
+    * Critérios de avaliação (impacto inerente e ambiente de controle).
+9. **Resposta ao Risco:**
+    * Tipos de resposta: evitar, reduzir, compartilhar e assumir.
+    * Elaboração e gestão de planos de ação.
+    * Prorrogação de planos de ação e alçadas de aprovação.
+10. **Reporte:** Comunicação das ações e resultados para as áreas e governança.
+
+**Parte 4: Tópicos Adicionais**
+
+11. **Riscos Não Financeiros - Estratégias de Horizontais:**
+    * Grupos de trabalho para abordar riscos não financeiros.
+    * Papéis e responsabilidades (Scrum Master, LPM, PM).
+    * Reuniões semanais e de revisão de entregas.
+    * Ferramentas: Backlog, Estórias de Usuário e Kanban.
+12. **Autoavaliação ICAAP:**
+    * Monitoramento dos riscos autodeclarados (self assessment).
+    * Responsabilidades da 1ª, 2ª e 3ª linha.
+
+**Parte 5: Considerações Finais**
+
+13. **Referências**
+14. **Glossário:** Definição de termos importantes.
+
+**Observação:** O documento contém diversas imagens e tabelas que ilustram os conceitos e processos, além de links para acesso a documentos e ferramentas internas."

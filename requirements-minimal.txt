@@ -1,0 +1,79 @@
+# ===================================================================
+# 🎯 RAG Enhanced - Minimal Requirements
+# ===================================================================
+# 
+# Dependências mínimas necessárias para executar apenas as
+# funcionalidades core do RAG Enhanced.
+#
+# Use este arquivo para instalações em produção ou ambientes
+# com restrições de espaço/recursos.
+#
+# Instalação:
+#   pip install -r requirements-minimal.txt
+# ===================================================================
+
+# ===================================================================
+# 📦 DEPENDÊNCIAS CORE (OBRIGATÓRIAS)
+# ===================================================================
+
+# Google Cloud e AI - ESSENCIAL
+google-cloud-storage>=2.10.0
+google-generativeai>=0.3.0
+vertexai>=1.38.0
+
+# Interface de usuário - ESSENCIAL
+gradio>=4.0.0
+
+# Processamento de dados - ESSENCIAL
+pandas>=2.0.0
+PyYAML>=6.0.1
+
+# ===================================================================
+# 🔧 UTILITÁRIOS BÁSICOS
+# ===================================================================
+
+# Validação de dados
+pydantic>=2.0.0
+
+# Manipulação de arquivos
+pathlib2>=2.3.7; python_version < "3.4"
+
+# Configuração
+python-dotenv>=1.0.0
+
+# ===================================================================
+# 🌐 REDE BÁSICA
+# ===================================================================
+
+# Cliente HTTP básico
+requests>=2.28.0
+
+# ===================================================================
+# 📊 COMPATIBILIDADE
+# ===================================================================
+
+# Compatibilidade Python
+typing-extensions>=4.0.0
+dataclasses>=0.8; python_version < "3.7"
+importlib-metadata>=6.0.0; python_version < "3.8"
+
+# ===================================================================
+# 📋 VERIFICAÇÃO DE INSTALAÇÃO MÍNIMA
+# ===================================================================
+#
+# Para verificar se a instalação mínima está funcionando:
+#
+# python -c "
+# try:
+#     import google.cloud.storage
+#     import vertexai
+#     import gradio
+#     import pandas
+#     import yaml
+#     print('✅ Instalação mínima OK - Todas as dependências core encontradas')
+# except ImportError as e:
+#     print(f'❌ Dependência faltando: {e}')
+#     print('💡 Execute: pip install -r requirements-minimal.txt')
+# "
+#
+# ===================================================================

@@ -1,0 +1,264 @@
+@startuml ValidAI Enhanced - Diagrama de Sequência
+
+!theme cerulean-outline
+!define AWSPUML https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v16.0/dist
+!includeurl AWSPUML/AWSCommon.puml
+
+title ValidAI Enhanced - Fluxos Principais do Sistema
+
+actor Usuario as "👤 Usuário"
+participant GradioInterface as "🌐 Interface Gradio"
+participant ChatMultimodal as "🤖 Chat Multimodal"
+participant FileProcessor as "📁 Processador de Arquivos"
+participant SecurityValidator as "🔒 Validador de Segurança"
+participant CacheManager as "🗄️ Gerenciador de Cache"
+participant ConfigLoader as "⚙️ Carregador de Config"
+participant PreValidator as "🔍 Pré-Validador"
+participant RAGSystem as "🧠 Sistema RAG"
+participant GoogleGemini as "🔮 Google Gemini API"
+participant CloudStorage as "☁️ Google Cloud Storage"
+
+== Inicialização do Sistema ==
+
+Usuario -> GradioInterface: Acessa aplicação (localhost:7860)
+activate GradioInterface
+
+GradioInterface -> ConfigLoader: load_config()
+activate ConfigLoader
+ConfigLoader -> ConfigLoader: Carrega validai_config.json
+ConfigLoader -> ConfigLoader: Aplica variáveis de ambiente
+ConfigLoader -> ConfigLoader: Valida configurações
+ConfigLoader --> GradioInterface: Configurações validadas
+deactivate ConfigLoader
+
+GradioInterface -> CacheManager: Inicializar cache
+activate CacheManager
+CacheManager -> CacheManager: Configurar TTL e LRU
+CacheManager --> GradioInterface: Cache inicializado
+deactivate CacheManager
+
+GradioInterface --> Usuario: Interface carregada (3 abas)
+
+== Fluxo 1: Chat Multimodal com Upload de Arquivo ==
+
+Usuario -> GradioInterface: Envia mensagem + arquivo
+activate GradioInterface
+
+GradioInterface -> ChatMultimodal: chat_multimodal(message, history, ...)
+activate ChatMultimodal
+
+ChatMultimodal -> SecurityValidator: validate_file_security(arquivo)
+activate SecurityValidator
+SecurityValidator -> SecurityValidator: Verificar path traversal
+SecurityValidator -> SecurityValidator: Validar extensão e tamanho
+SecurityValidator -> SecurityValidator: Analisar MIME type
+SecurityValidator -> SecurityValidator: Detectar assinaturas maliciosas
+SecurityValidator --> ChatMultimodal: Resultado da validação
+deactivate SecurityValidator
+
+alt Arquivo válido
+    ChatMultimodal -> FileProcessor: Processar arquivo por tipo
+    activate FileProcessor
+    
+    alt Arquivo de código (.py, .sas, .ipynb)
+        FileProcessor -> FileProcessor: process_code_file()
+        FileProcessor -> FileProcessor: Converter para string
+        FileProcessor --> ChatMultimodal: Código extraído
+    
+    else Arquivo PDF
+        FileProcessor -> FileProcessor: process_pdf_file()
+        FileProcessor --> ChatMultimodal: Conteúdo PDF extraído
+    
+    else Arquivo de imagem
+        FileProcessor -> FileProcessor: process_image_file()
+        FileProcessor -> FileProcessor: Converter para base64
+        FileProcessor --> ChatMultimodal: Imagem processada
+    
+    else Arquivo Excel/CSV
+        FileProcessor -> FileProcessor: process_excel_file() / process_csv_file()
+        FileProcessor --> ChatMultimodal: Dados tabulares extraídos
+    
+    end
+    deactivate FileProcessor
+    
+    ChatMultimodal -> CacheManager: Verificar cache
+    activate CacheManager
+    CacheManager -> CacheManager: get(cache_key)
+    alt Cache hit
+        CacheManager --> ChatMultimodal: Resposta em cache
+    else Cache miss
+        CacheManager --> ChatMultimodal: Não encontrado em cache
+        
+        ChatMultimodal -> GoogleGemini: Enviar para API Gemini
+        activate GoogleGemini
+        GoogleGemini -> GoogleGemini: Processar com modelo configurado
+        GoogleGemini --> ChatMultimodal: Stream de resposta
+        deactivate GoogleGemini
+        
+        ChatMultimodal -> CacheManager: set(cache_key, resposta)
+        CacheManager -> CacheManager: Armazenar com TTL
+    end
+    deactivate CacheManager
+    
+    ChatMultimodal -> ChatMultimodal: Processar chunks da resposta
+    ChatMultimodal --> GradioInterface: Stream de resposta
+    
+else Arquivo inválido
+    ChatMultimodal --> GradioInterface: Erro de validação
+end
+
+deactivate ChatMultimodal
+GradioInterface --> Usuario: Resposta exibida gradualmente
+deactivate GradioInterface
+
+== Fluxo 2: Pré-Validador de Modelos ==
+
+Usuario -> GradioInterface: Upload documentos + códigos (aba Pré-Validador)
+activate GradioInterface
+
+GradioInterface -> ChatMultimodal: chat_compare(documentos, codigos, ...)
+activate ChatMultimodal
+
+ChatMultimodal -> PreValidator: Inicializar pré-validador
+activate PreValidator
+
+loop Para cada arquivo de código
+    ChatMultimodal -> FileProcessor: process_code_file()
+    activate FileProcessor
+    FileProcessor --> ChatMultimodal: Código extraído
+    deactivate FileProcessor
+end
+
+alt Apenas documentos
+    PreValidator -> PreValidator: gerar_prompt_documentacao()
+    PreValidator -> GoogleGemini: Validar documento
+    
+else Apenas código
+    PreValidator -> PreValidator: gerar_prompt_codigo()
+    PreValidator -> GoogleGemini: Validar código
+    
+else Documentos + Código
+    PreValidator -> PreValidator: gerar_prompt_consistencia()
+    PreValidator -> GoogleGemini: Validar consistência
+end
+
+activate GoogleGemini
+GoogleGemini -> GoogleGemini: Análise com critérios específicos
+GoogleGemini --> PreValidator: Relatório de validação
+deactivate GoogleGemini
+
+PreValidator --> ChatMultimodal: Resultado estruturado
+deactivate PreValidator
+
+ChatMultimodal --> GradioInterface: Relatório de pré-validação
+deactivate ChatMultimodal
+
+GradioInterface --> Usuario: Relatório + opção de exportar PDF
+deactivate GradioInterface
+
+== Fluxo 3: Sistema RAG (Retrieval-Augmented Generation) ==
+
+Usuario -> GradioInterface: Seleciona base de conhecimento + pergunta
+activate GradioInterface
+
+GradioInterface -> ChatMultimodal: fn_chat_rag_manual(message, ...)
+activate ChatMultimodal
+
+ChatMultimodal -> RAGSystem: Configurar base selecionada
+activate RAGSystem
+
+alt Base "Conteúdos de INs"
+    RAGSystem -> RAGSystem: diretorio_rag = 'base_conhecimento'
+    
+else Base "Riscos de Mercado"
+    RAGSystem -> RAGSystem: diretorio_rag = 'base_conhecimento/Mercado'
+    
+else Base "Riscos de Crédito"  
+    RAGSystem -> RAGSystem: diretorio_rag = 'base_conhecimento/Credito'
+    
+else Google Search
+    RAGSystem -> RAGSystem: Configurar para busca web
+end
+
+ChatMultimodal -> RAGSystem: get_file(mensagem, df_resumo)
+RAGSystem -> RAGSystem: Identificar documento relevante
+RAGSystem --> ChatMultimodal: nome_arquivo ou "contexto_geral"
+
+alt Documento específico encontrado
+    alt Documento já no contexto
+        ChatMultimodal -> GoogleGemini: Enviar pergunta diretamente
+    else Documento novo
+        ChatMultimodal -> RAGSystem: Carregar documento
+        RAGSystem -> CloudStorage: Acessar documento
+        activate CloudStorage
+        CloudStorage --> RAGSystem: Conteúdo do documento
+        deactivate CloudStorage
+        
+        ChatMultimodal -> GoogleGemini: Contexto + pergunta
+    end
+    
+else Google Search ativado
+    ChatMultimodal -> GoogleGemini: Pergunta com tool Google Search
+    
+else Contexto geral
+    ChatMultimodal -> GoogleGemini: Pergunta sem RAG específico
+end
+
+activate GoogleGemini
+GoogleGemini -> GoogleGemini: Processar com contexto RAG
+GoogleGemini --> ChatMultimodal: Resposta contextualizada
+deactivate GoogleGemini
+
+deactivate RAGSystem
+
+ChatMultimodal --> GradioInterface: Resposta + fontes
+deactivate ChatMultimodal
+
+GradioInterface --> Usuario: Resposta com metadados RAG
+deactivate GradioInterface
+
+== Fluxo 4: Gerenciamento de Cache e Performance ==
+
+note over CacheManager: Cache inteligente com TTL e LRU
+
+CacheManager -> CacheManager: Cleanup automático (a cada 10min)
+CacheManager -> CacheManager: Verificar TTL expirado
+CacheManager -> CacheManager: Aplicar política LRU
+CacheManager -> CacheManager: Liberar memória
+
+== Fluxo 5: Exportação de Conversas ==
+
+Usuario -> GradioInterface: "exportar conversa"
+activate GradioInterface
+
+GradioInterface -> ChatMultimodal: Detectar comando de exportação
+activate ChatMultimodal
+
+ChatMultimodal -> ChatMultimodal: Gerar timestamp
+ChatMultimodal -> ChatMultimodal: exporta_conversa(history, timestamp)
+ChatMultimodal -> ChatMultimodal: Criar PDF da conversa
+ChatMultimodal --> GradioInterface: "Conversa exportada + nome_arquivo"
+deactivate ChatMultimodal
+
+GradioInterface --> Usuario: Link para download
+deactivate GradioInterface
+
+== Tratamento de Erros ==
+
+note over SecurityValidator, GoogleGemini: Tratamento robusto de exceções
+
+alt Erro de validação de arquivo
+    SecurityValidator --> ChatMultimodal: ValidationError
+    ChatMultimodal --> GradioInterface: Mensagem de erro segura
+    
+else Erro de API Gemini
+    GoogleGemini --> ChatMultimodal: APIError
+    ChatMultimodal -> ChatMultimodal: Log estruturado
+    ChatMultimodal --> GradioInterface: "Erro temporário, tente novamente"
+    
+else Erro de cache
+    CacheManager --> ChatMultimodal: CacheError
+    ChatMultimodal -> ChatMultimodal: Continuar sem cache
+end
+
+@enduml

@@ -1,0 +1,79 @@
+{
+  "instrucoes_normativas": {
+    "nome": "Instruções Normativas Multimodal",
+    "descricao": "INs 706, 1253 e 1146 com imagens, diagramas e apresentações",
+    "diretorio_local": "base_conhecimento/ins_multimodal",
+    "bucket_path": "validai-rag/ins_multimodal",
+    "tipos_arquivo": [".pdf", ".txt", ".md", ".docx"],
+    "tipos_multimodal": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".mp4", ".avi", ".mov"],
+    "ativo": true,
+    "suporte_multimodal": true,
+    "corpus_id": null
+  },
+  "apresentacoes_validacao": {
+    "nome": "Apresentações e Vídeos de Validação",
+    "descricao": "Apresentações PowerPoint, vídeos explicativos e webinars sobre validação",
+    "diretorio_local": "base_conhecimento/apresentacoes",
+    "bucket_path": "validai-rag/apresentacoes",
+    "tipos_arquivo": [".pdf", ".pptx", ".ppt", ".txt", ".md"],
+    "tipos_multimodal": [".jpg", ".jpeg", ".png", ".gif", ".mp4", ".avi", ".mov", ".wmv", ".webm"],
+    "ativo": true,
+    "suporte_multimodal": true,
+    "corpus_id": null
+  },
+  "graficos_metricas": {
+    "nome": "Gráficos e Dashboards",
+    "descricao": "Visualizações de dados, dashboards, gráficos de performance e métricas",
+    "diretorio_local": "base_conhecimento/graficos",
+    "bucket_path": "validai-rag/graficos",
+    "tipos_arquivo": [".pdf", ".txt", ".md", ".xlsx", ".csv"],
+    "tipos_multimodal": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".svg"],
+    "ativo": true,
+    "suporte_multimodal": true,
+    "corpus_id": null
+  },
+  "casos_uso_visuais": {
+    "nome": "Casos de Uso com Mídia",
+    "descricao": "Exemplos práticos com imagens, vídeos, áudios e demonstrações",
+    "diretorio_local": "base_conhecimento/casos_visuais",
+    "bucket_path": "validai-rag/casos_visuais",
+    "tipos_arquivo": [".pdf", ".txt", ".md", ".ipynb", ".html"],
+    "tipos_multimodal": [".jpg", ".jpeg", ".png", ".gif", ".mp4", ".avi", ".mov", ".mp3", ".wav", ".m4a"],
+    "ativo": true,
+    "suporte_multimodal": true,
+    "corpus_id": null
+  },
+  "treinamentos_audio": {
+    "nome": "Treinamentos e Áudios",
+    "descricao": "Gravações de treinamentos, podcasts e explicações em áudio",
+    "diretorio_local": "base_conhecimento/treinamentos_audio",
+    "bucket_path": "validai-rag/treinamentos_audio",
+    "tipos_arquivo": [".pdf", ".txt", ".md"],
+    "tipos_multimodal": [".mp3", ".wav", ".flac", ".aac", ".ogg", ".m4a", ".mp4"],
+    "ativo": true,
+    "suporte_multimodal": true,
+    "corpus_id": null
+  },
+  "documentos_visuais": {
+    "nome": "Documentos com Elementos Visuais",
+    "descricao": "Relatórios, estudos e documentos com gráficos, tabelas e imagens",
+    "diretorio_local": "base_conhecimento/documentos_visuais",
+    "bucket_path": "validai-rag/documentos_visuais",
+    "tipos_arquivo": [".pdf", ".docx", ".pptx", ".xlsx"],
+    "tipos_multimodal": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff"],
+    "ativo": true,
+    "suporte_multimodal": true,
+    "corpus_id": null
+  },
+  "demos_interativas": {
+    "nome": "Demonstrações Interativas",
+    "descricao": "Vídeos de demonstração, tutoriais e conteúdo interativo",
+    "diretorio_local": "base_conhecimento/demos",
+    "bucket_path": "validai-rag/demos",
+    "tipos_arquivo": [".html", ".md", ".txt"],
+    "tipos_multimodal": [".mp4", ".webm", ".avi", ".mov", ".gif", ".jpg", ".png"],
+    "ativo": false,
+    "suporte_multimodal": true,
+    "corpus_id": null
+  }
+}

@@ -1,0 +1,989 @@
+Nome,Resumo,Modelos
+MTV-130-2023 - RC - Modelo - LGD Carteira Privado - 2017 - Média (MOD000128).pdf,"O documento é um relatório de validação de um modelo chamado ""Modelo - LGD Carteira Privado - 2017 - Média (MOD000128)"", utilizado pelo Banco BV para estimar o percentual de perda de carteiras de crédito consignado privado. O relatório aborda os seguintes tópicos:
+
+**1. Resumo Executivo:** Apresenta uma visão geral do modelo, destacando sua finalidade e os resultados da validação.
+
+**2. Objetivo:** Define o objetivo da validação, que é revalidar o modelo conforme a metodologia padrão.
+
+**3. Resultados:** Apresenta os resultados da validação, indicando que o modelo atende aos seus objetivos com oportunidades de melhoria.
+
+**4. Anotações de Risco:** Informa que não há anotações de risco.
+
+**5. Oportunidades de melhoria:** Detalha as oportunidades de melhoria identificadas no modelo, relacionadas à documentação, cálculo do LGD e uso de variáveis explicativas.
+
+**6. Anexos:** Lista os anexos do relatório.
+
+**6.1 Documentação:** Avalia a completude e clareza da documentação do modelo.
+
+**6.2 Governança:** Avalia o processo de aprovação e cadastro do modelo.
+
+**6.3 Monitoramento:** Avalia a classificação, suficiência e os triggers do monitoramento do modelo.
+
+**Temas abordados:**
+
+* Validação de modelos
+* Risco de crédito
+* Carteiras de crédito consignado
+* Perda esperada (LGD)
+* Monitoramento de modelos
+* Governança de modelos
+* Documentação de modelos 
+",MOD000128
+MTV-129-2023 - RC - Modelo - LGD Carteira Pesados - 2017 - Média (MO000127).pdf,"O documento é um relatório de validação de um modelo chamado ""RC - Modelo - LGD Carteira Pesados - 2017 - Média (MOD000127)"", utilizado para estimar o percentual de perda em carteiras de crédito de veículos pesados. O relatório aborda os seguintes tópicos:
+
+**1. Resumo Executivo:**
+
+* Descrição do modelo e sua utilização.
+* Resultados da revalidação, incluindo a identificação de uma fragilidade na performance do modelo para prazos curtos.
+* Menção a oportunidades de melhoria, como a revisão da documentação e a utilização de variáveis explicativas.
+* Classificação do modelo como ""C"" devido a fragilidades nos controles.
+
+**2. Objetivo:**
+
+* Definir o objetivo do trabalho como a revalidação do modelo em questão.
+
+**3. Resultados:**
+
+* Apresentação da nota final ""C"" para o modelo.
+* Descrição das principais situações identificadas, incluindo a fragilidade na performance (anotação #R1).
+
+**4. Anotações de Risco:**
+
+* Detalhes da anotação de risco #R1, relacionada à performance do modelo.
+
+**5. Oportunidades de melhoria:**
+
+* Descrição das oportunidades de melhoria identificadas, incluindo a revisão da documentação (#M1), a revisão do cálculo do LGD (#M2), a utilização de variáveis explicativas (#M3) e o uso da taxa efetiva do contrato para desconto dos recebíveis (#M4).
+
+**6. Anexos:**
+
+* Descrição dos anexos do relatório.
+
+**6.1 Documentação:**
+
+* Avaliação da documentação do modelo, com a atribuição da nota ""B"" devido à oportunidade de melhoria #M1.
+
+**6.2 Governança:**
+
+* Avaliação da governança do modelo, incluindo a aprovação e o cadastro, com a atribuição da nota ""A"".
+
+**6.3 Monitoramento:**
+
+* Avaliação do monitoramento do modelo, incluindo a classificação, a análise de suficiência, a operacionalização, o monitoramento global e os triggers, com a atribuição da nota ""C"" devido à anotação de risco #R1. 
+","O único ID de modelo presente no documento é **MOD000127**. 
+"
+MTV-93-2023 - Emprego e Governança - Modelo LGD Leves.pdf,"##  Resumo dos Tópicos Abordados no Memorando Técnico de Validação de Modelo (MTV-93-2023):
+
+**Título do Documento:**  MEMORANDO TÉCNICO DE VALIDAÇÃO DE MODELO (MTV-93-2023)
+
+**Assunto:** Validação Contínua LGD Leves 2022 (MOD000929)
+
+**Objetivo Principal:** Avaliar o teste de implementação e a aprovação para uso do modelo LGD Leves 2022, complementando o relatório VM-27-2023.
+
+**Contexto:**
+
+* O modelo LGD Leves 2022 passou por validação inicial (VM-27-2023) antes da implementação em sistema.
+* Este memorando foca na **avaliação da implementação (Emprego do Modelo) e Governança** após a implementação, complementando o relatório inicial.
+
+**Resultados:**
+
+* **Inconsistências na Implementação:** Os valores de LGD implementados no sistema não correspondem aos valores documentados, apesar da segmentação estar correta.
+* **Deficiências na Governança:** Foi identificada a ausência de controles e mecanismos de verificação que garantam a correta implementação do modelo em sistema.
+
+**Apontamentos:**
+
+* **Risco Médio #R1:** Ausência de controles homologatórios na implantação do modelo.
+
+**Conclusões:**
+
+* **Implementação Incorreta:**  Confirma-se a implementação incorreta do modelo.
+* **Baixo Nível de Controle:**  Evidencia-se um baixo nível de controle no processo de implementação e gestão de modelos.
+
+**Próximos Passos:**
+
+* **Correção da Implementação:**  Ajustar os valores de LGD no sistema para corresponderem à documentação.
+* **Implementação de Controles:** Estabelecer mecanismos de verificação para garantir a correta implementação de modelos.
+
+**Classificação do Modelo:**
+
+* **Nota do Modelo:** C (revisada de B para C devido aos problemas de implementação).
+* **Aprovação para Uso:**  O modelo foi aprovado para uso pelo superintendente da área responsável, mas precisa ser corrigido e reavaliado. 
+",* MOD000929
+MTV-132-2023 -RC - Modelo - Credit Scoring CPG 001 (MOD000466).pdf,"##  Relatório de Validação de Modelo -  Credit Scoring CPG 001 (MOD000466)
+
+**Tópicos e Temas Abordados:**
+
+**1. Informações Gerais:**
+
+* Tipo de modelo: Credit Scoring CPG 001 (MOD000466)
+* Tipo de validação: Revalidação (Tier III)
+* Data do relatório: 29/12/2023
+
+**2. Objetivo:**
+
+* Revalidar o modelo  Credit Scoring CPG 001 (MOD000466) conforme metodologia padrão.
+* Dimensões avaliadas: Governança, Documentação e Monitoramento.
+
+**3. Resultados:**
+
+*  Conclusão geral: O modelo e seu entorno atendem aos seus objetivos com falhas mínimas.
+* Nota final: C (Baixo)
+
+**4. Anotações de Risco:**
+
+* **#R1**: Performance do modelo insuficiente (farol vermelho no monitoramento).
+    * Descrição detalhada da situação: Mudança significativa no perfil populacional impactando a performance (KS1 e KS2), mas não representando um risco significativo.
+    * Acompanhamento da situação em fóruns futuros.
+
+**5. Oportunidades de Melhoria:**
+
+* **#M1**: Utilização de indicador que desconsidere o efeito de mudanças populacionais decorrentes de políticas de crédito (ex: KS Ajustado).
+
+**6. Anexos (Detalhes da Avaliação):**
+
+* **6.1 Documentação (Nota A):**
+    * Completude e clareza da documentação.
+    * Descrição do modelo e etapas de desenvolvimento.
+    * Especificações finais do modelo e técnicas empregadas.
+    * Bases e códigos utilizados no desenvolvimento.
+    * Aplicações, público alvo, premissas e limitações.
+* **6.2 Governança (Nota A):**
+    * Aprovação: 
+        * Nível de aprovação adequado (Superintendente da área e anuência da Área de Gestão de Risco de Modelos).
+    * Cadastro: 
+        * Cadastro no inventário realizado de forma adequada.
+* **6.3 Monitoramento (Nota C):**
+    * Classificação do modelo:
+        * Grau de Exigibilidade de Monitoramento (GEM): N1 (Alta) - Modelo baseado em dados suscetível à degradação.
+    * Análise de Suficiência:
+        * Monitoramento global: Boa cobertura dos aspectos de performance do modelo (acurácia da PD e discriminação dos scores).
+        * Operacionalização - Periodicidade de Execução: Controle estruturado, atualização semestral (adequada), alto grau de automatização e ferramenta adequada (Power BI).
+        * Triggers:
+            * Formalização: Documentação dos triggers e informações do monitoramento.
+            * Adequação dos patamares dos triggers: Combinação de indicadores para definição do alerta (farol vermelho), com criticidade adequada.
+            * Status atual: Farol vermelho devido à performance, porém justificado pela mudança no perfil populacional. Acompanhamento nos próximos fóruns. 
+
+
+**Considerações:**
+
+O relatório apresenta uma análise completa do modelo Credit Scoring CPG 001, destacando seus pontos fortes (documentação, governança),  pontos de atenção (performance) e oportunidades de melhoria (indicador para mudanças populacionais). 
+",MOD000466.
+MTV-97-2023 - Modelo de Collection Amigavel - 31 a 75 [uso dados externos bureau](MOD000934).pdf,"O documento é um relatório de validação de um modelo chamado ""COBR_PROPENSAO_CARTAO_AMIGAVEL_31_75_COLLECTION_BUREAU_v3"". O relatório está estruturado da seguinte forma:
+
+**Página 1:**
+* Título do relatório: Relatório de Validação de Modelo
+* Número de identificação do modelo: MTV-97-2023
+* Nome completo do modelo: COBR_PROPENSAO_CARTAO_AMIGAVEL_31_75_COLLECTION_BUREAU_v3
+* Data de emissão do relatório: 27/10/2023
+* Lista de destinatários do relatório, incluindo cargos e nomes.
+
+**Página 2:**
+* Resumo executivo:
+    * Descrição breve do objetivo do modelo: Identificar clientes propensos a efetuar o pagamento mínimo da fatura do cartão de crédito entre 31 e 75 dias, utilizando variáveis externas.
+    * Metodologia utilizada: Metodologia padrão de validação de modelos.
+    * Principais constatações: 
+        * Informação incompleta sobre as variáveis do modelo.
+        * Ausência de códigos e detalhes no desenvolvimento.
+        * Pendências resolvidas durante o processo de validação.
+        * Monitoramento, indicadores, cadastro e aprovação considerados adequados.
+    * Conclusão: Modelo considerado adequado do ponto de vista formal, recebendo nota A.
+* Nomes e cargos dos responsáveis pela validação do modelo.
+
+**Página 3:**
+* Objetivo da validação: Validar o modelo conforme a metodologia descrita na IN_706, nas dimensões de Governança, Documentação e Monitoramento.
+* Resultados da validação: Modelo e entorno considerados adequados em todos os aspectos avaliados.
+* Tabela com as notas da avaliação do modelo por dimensão:
+    * ID: MOD000934
+    * Nome do modelo
+    * Tier: III
+    * Governança: A
+    * Documentação: A
+    * Dados: N/A
+    * Metodologia: N/A
+    * Emprego: N/A
+    * Monitoramento: A
+    * Nota final: A
+    * Anotações: -
+    * Risco: Baixo
+* Menção à descrição das situações identificadas no modelo nos itens seguintes do relatório.
+* Anotações de Risco: Inexistentes.
+* Oportunidades de melhoria: Inexistentes.
+
+**Página 4:**
+* Anexos: Descrição da metodologia de validação, incluindo o checklist utilizado e a plataforma (Portal GM).
+* Documentação:
+    * Descrição da documentação avaliada, incluindo informações sobre o modelo, etapas de desenvolvimento e link para acesso no Confluence.
+    * Detalhes sobre a análise da documentação, com foco em três pontos principais:
+        * Especificações finais do modelo para uso.
+        * Técnica empregada no desenvolvimento do modelo (Random Forest).
+        * Códigos de desenvolvimento e arquivo objeto modelo (MOJO).
+
+**Página 5:**
+* Continuação da seção sobre a Documentação:
+    * Descrição das informações sobre o desenvolvimento do modelo, incluindo as variáveis utilizadas, etapas, código do modelo e arquivo objeto modelo (MOJO).
+    * Metodologia utilizada no desenvolvimento do modelo, com detalhes sobre cada etapa.
+
+**Página 6:**
+* Informações sobre a implantação do modelo e aplicações previstas.
+* Motivação para o desenvolvimento do modelo: Avaliar a influência de variáveis externas na performance do modelo anterior (MOD000775).
+* Objetivos do modelo: Identificar clientes propensos a efetuar o pagamento mínimo entre 31 e 75 dias.
+* Uso destinado ao modelo: Área de cobrança.
+* Governança:
+    * Descrição do processo de aprovação do modelo, de acordo com a IN_1253, considerando o Tier III do modelo.
+    * Confirmação de que o modelo possui aprovação cadastrada no inventário na instância correta (Superintendente).
+
+**Página 7:**
+* Continuação da seção sobre Governança:
+    * Evidência da aprovação do modelo através de um email.
+    * Cadastro do modelo:
+        * Confirmação de que o modelo possui cadastro no GRC.
+        * Print screen da aba ""General"" do cadastro no GRC.
+* Nota atribuída à dimensão de Governança: A.
+
+**Página 8:**
+* Monitoramento:
+    * Descrição do conceito de GEM (Grau de Exigibilidade de Monitoramento) e seus três níveis de classificação (N1, N2 e N3).
+    * Definição de monitorabilidade e essencialidade do monitoramento, conforme a IN_706.
+    * Classificação do modelo como GEM N1, justificando a classificação.
+    * Descrição da análise de suficiência do monitoramento.
+
+**Página 9:**
+* Continuação da seção sobre Monitoramento:
+    * Apresentação do monitoramento do modelo através de um print screen da ferramenta utilizada (Power BI).
+    * Descrição da operacionalização do monitoramento, incluindo a periodicidade de execução.
+    * Análise da periodicidade de atualização do monitoramento, utilizando como critério a IN_1253 para modelos Tier III (atualização semestral).
+    * Conclusões sobre o controle do monitoramento, considerando a ferramenta utilizada, a automatização e a periodicidade.
+    * Descrição do monitoramento global, com ênfase na abrangência dos indicadores e sua adequação para modelos de resposta binária.
+    * Descrição dos triggers utilizados no monitoramento, incluindo a formalização e a adequação dos parâmetros.
+
+**Página 10:**
+* Conclusão da seção sobre Monitoramento:
+    * Apresentação do farol do modelo, indicando que o monitoramento está verde para os últimos três meses.
+    * Parecer final sobre a dimensão de monitoramento: considerado adequado, com estrutura automatizada, recebendo nota A.
+
+Em resumo, o documento apresenta uma análise completa do modelo ""COBR_PROPENSAO_CARTAO_AMIGAVEL_31_75_COLLECTION_BUREAU_v3"", validando sua estrutura, desenvolvimento, documentação, governança e monitoramento. O relatório conclui que o modelo está adequado para uso, tendo cumprido todos os requisitos e boas práticas.","MOD00934, MOD000775, MOD000665. 
+"
+VM-02-2023 - PE Safra Solar V3 - v2.pdf,"O documento se trata de um relatório de validação de um modelo de **perda esperada de crédito para financiamentos de energia solar (PE Safra Solar V3)**, desenvolvido pelo banco BV. O relatório aponta que o modelo **atende parcialmente aos seus objetivos**, com falhas que demandam ação.
+
+**Principais tópicos abordados:**
+
+* **Problemas identificados no modelo:**
+    * Ineficácia e incompletude do monitoramento do modelo.
+    * Deficiências metodológicas no cálculo da PDLT (Probabilidade de Default Lifetime) e, consequentemente, do EAD (Exposure at Default).
+    * Dados não adequados por não estarem maturados, terem baixo volume e estarem em regime transiente, prejudicando a representatividade.
+* **Sugestões de melhorias:**
+    * Modelagem do EAD em função da PD12 e da Taxa.
+    * Uso de prazo de 72 meses para estimativa da regressão PDLT para prazo de 84 meses.
+    * Falta de conservadorismo na definição do LGD (Loss Given Default) em relação a veículos leves.
+    * Definição da equação que será utilizada para o prazo de 96 meses.
+    * Não utilização da projeção da PDLT 12 e 24, já que se tem um bom volume de safra completamente maturadas.
+    * Complementação da documentação com texto discursivo.
+* **Anexos:**
+    * Processo de aplicação do modelo.
+    * Descritivo do modelo.
+    * Volumetria de Solar e de veículos leves.
+
+**Conclusões do relatório:**
+
+* O modelo apresenta falhas que precisam ser corrigidas para garantir sua eficácia.
+* A base de dados utilizada para modelagem é limitada, o que aumenta a incerteza das estimativas.
+* Há oportunidades de melhoria na modelagem do EAD e LGD.
+
+**Recomendações do relatório:**
+
+* Corrigir as falhas metodológicas apontadas.
+* Buscar alternativas para aumentar a base de dados utilizada na modelagem.
+* Implementar um monitoramento mais robusto e completo.
+* Documentar o modelo de forma mais detalhada. 
+","MOD000960, MOD000448. 
+"
+MTV-68-2023 - Collection Solar para atrasos  longos (MOD000923).pdf,"O documento é um relatório de validação de um modelo de *machine learning* chamado ""Collection Solar para atrasos longos"" (MOD000923). O relatório aborda os seguintes tópicos:
+
+**1. Informações Gerais:**
+
+* Nome do modelo: Collection Solar para atrasos longos
+* ID do modelo: MOD000923
+* Objetivo: Identificar clientes com atrasos entre 90 e 360 dias e prever a probabilidade de pagamento em até 60 dias.
+* Data do relatório: 17/07/2023
+
+**2. Processo de Validação:**
+
+* Metodologia: Baseada na IN_706.
+* Dimensões avaliadas: Governança, Documentação e Monitoramento.
+* Ferramentas utilizadas: Checklist, Portal GM, Confluence, PEGA, Power BI.
+
+**3. Resultados da Validação:**
+
+* **Governança:**
+    * Aprovação: Aprovado na ferramenta PEGA na instância correta (Superintendente).
+    * Cadastro: Cadastrado corretamente no GRC.
+    * Classificação: Tier III.
+* **Documentação:**
+    * Descrição completa do modelo, etapas de desenvolvimento, metodologia, código-fonte e arquivo objeto (MOJO).
+    * Informações claras sobre as premissas,  aplicações e  implantação do modelo.
+* **Monitoramento:**
+    * Classificação GEM: N1 (alta exigibilidade).
+    * Monitoramento global: Amplo conjunto de indicadores de acurácia e discriminação (KS2, ACC, AUROC, F1, GINI, PRECISION, RECALL).
+    * Operacionalização:  Atualização mensal, processo automatizado em ferramenta adequada (Power BI).
+    * Triggers: Formalizados, baseados no desvio padrão da média histórica, limites de 2 e 3 desvios.
+    * Performance:  Adequada, com farol verde nas últimas três safras monitoradas.
+
+**4. Conclusão:**
+
+* O modelo e seu entorno atendem plenamente aos objetivos em todos os aspectos avaliados.
+* Não foram identificados riscos ou oportunidades de melhoria.
+* Nota final: A (adequado). 
+","* MOD000923 
+* MOD000917
+* MOD000920 
+"
+MTV-131-2023 - RC - Modelo - Behavior Motos - 2016 - Calibragem PD (MOD000058).pdf,"O documento é um relatório de validação de modelo, referente a um modelo de risco de crédito chamado ""RC - Modelo - Behavior Motos - 2016 - Calibragem PD"". O relatório apresenta os seguintes tópicos:
+
+**1. Resumo Executivo:**
+
+* Objeto da validação: Revalidação do modelo, com foco nas dimensões de Governança, Documentação e Monitoramento.
+* Resultados: Modelo considerado adequado com ressalvas, apresentando fragilidades no controle e risco baixo. 
+* Principais constatações: 
+    * Dimensões de Governança e Documentação sem novas oportunidades de melhoria.
+    * Dimensão de Monitoramento apresenta oportunidade de melhoria na unificação do monitoramento das populações e anotação de risco relacionada ao status de uma das populações.
+
+**2. Objetivo:**
+
+* Revalidar o modelo conforme metodologia padrão e avaliar as dimensões de Governança, Documentação e Monitoramento.
+
+**3. Resultados:**
+
+* Avaliação geral: O modelo atende aos objetivos com ressalvas pontuais.
+* Detalhamento da avaliação por dimensão:
+    * Governança: Nota A
+    * Documentação: Nota A
+    * Metodologia: Nota B
+    * Emprego: Nota B
+    * Monitoramento: Nota C
+* Listagem das principais situações identificadas no modelo, que serão detalhadas nas seções seguintes.
+
+**4. Anotações de Risco:**
+
+* Descrição da anotação de risco #R1: Status vermelho no monitoramento de uma das populações do modelo, indicando baixa performance. 
+* Detalhes sobre a causa da anotação, a equipe responsável e as observações sobre a situação.
+
+**5. Oportunidades de melhoria:**
+
+* Listagem das oportunidades de melhoria #M1 a #M4, identificadas em validação anterior (MTV-45-2020).
+* Descrição da oportunidade de melhoria #M5, referente à criação de um monitoramento global do modelo.
+
+**6. Anexos:**
+
+* Detalhamento da avaliação das dimensões do modelo, com foco na Governança e Monitoramento.
+
+**6.1 Governança:**
+
+* Análise do processo de aprovação do modelo, considerando a governança vigente.
+* Verificação da existência de aprovação formal para uso do modelo, mesmo antes da IN_1253.
+* Conclusão: Modelo possui aprovação para uso.
+
+**6.2 Cadastro:**
+
+* Verificação do cadastro do modelo no inventário.
+* Conclusão: Cadastro realizado de forma adequada.
+
+**6.3 Monitoramento:**
+
+* Definição e explicação do conceito de Grau de Exigibilidade de Monitoramento (GEM).
+* Classificação do modelo como GEM N1, devido à sua suscetibilidade à degradação e à possibilidade de monitoramento de performance.
+
+**6.3.1 Classificação do modelo:**
+
+* Detalhamento dos critérios de classificação do GEM, considerando a monitorabilidade e a essencialidade.
+* Justificativa da classificação do modelo como GEM N1.
+
+**6.3.2 Análise de suficiência:**
+
+* Descrição dos indicadores de monitoramento utilizados, incluindo:
+    * Estabilidade Populacional (KS1 e PSI).
+    * Discriminação (KS1 da bad rate, KS2 e Delta KS).
+* Análise da frequência de atualização, acurácia e completude das informações.
+* Identificação da necessidade de unificar os monitoramentos das duas populações do modelo.
+* Conclusão: Monitoramento apresenta falhas mínimas, com a necessidade de melhoria na unificação da visão.
+
+**7. Conclusões:**
+
+* Aponta que o modelo e seu entorno atendem aos objetivos com falhas mínimas.
+* Recomenda a criação de um indicador de performance global e o acompanhamento da descalibragem em fóruns futuros.
+* Classifica o risco do modelo como baixo, devido à especificidade da descalibragem.
+* Atribui nota C para a dimensão de Monitoramento, devido às falhas mínimas encontradas. 
+","* MOD000058 
+"
+MTV-108 -2023  - Validação continua Ajuizamento Leves_v4.pdf,"O documento é um Memorando Técnico de Validação de Modelo (MTV) sobre a **Validação Contínua** do **Modelo Ajuizamento Leves_v4**. 
+
+**Principais Tópicos:**
+
+1. **Resumo:**
+    * Contexto da validação: Abertura do trabalho em 2023, inicialmente com documentação insuficiente.
+    * Evolução da documentação: Melhora significativa após complementação, mas ainda com pontos a serem melhorados.
+    * Próximos passos: Trabalho técnico de validação (por se tratar de modelo Tier II) e manutenção do modelo sem nota até a conclusão da validação.
+
+2. **Objetivos:**
+    * Validação contínua do modelo, conforme metodologia da IN_706.
+    * Relação entre modelo, apontamentos e planos de ação.
+
+3. **Resultados:**
+    * Tabela com ID do modelo, Tier, escopo da validação, notas, anotações finais e risco.
+    * Detalhe do Plano de Ação (TSK 082669): 
+        * Descrição do problema: documentação insuficiente.
+        * Descrição da solução: aprimorar a documentação.
+        * Implementação: documentação atualizada.
+        * Localização do arquivo atualizado.
+
+4. **Evidências do cumprimento do plano de ação:**
+    * Prints da documentação atualizada, incluindo:
+        * Tabelas de origem.
+        * Detalhamento do código de desenvolvimento e tratamento dos dados.
+        * Apresentação das regressões (coeficientes e MOJO - quando aplicável).
+        * Apresentação do objeto modelo para Random Forest e hiperparâmetros.
+
+5. **Conclusão:**
+    * Documento atualizado atende aos requisitos, com nível de informação e detalhamento adequados.
+    * Plano de ação considerado implementado.
+    * Anotação de risco pode ser baixada. 
+","O documento aborda apenas um modelo, cujo ID é:
+
+* MOD000654 
+"
+VM-13-2023 - Teste de Estresse PME e ConcVar.pdf,"##  Relatório de Validação Independente de Modelos (VM-13-2023) -  Teste de Estresse
+
+**Objetivo:** Validação dos modelos de Teste de Estresse para Despesa de PDD de PME e Concessão Varejo.
+
+**Escopo:** 
+* **Modelo de Teste de Estresse Concessão Varejo (MOD000863):**  Estima a concessão de crédito no varejo para os próximos 3 anos, considerando variáveis internas e macroeconômicas.
+* **Modelo de Teste de Estresse de Over90 PME (MOD000999):** Estima a despesa de PDD para PME nos próximos 3 anos, utilizando uma proxy (Over90 BACEN) e transformação para PDD.
+
+**Metodologia:** Análise quantitativa com base em modelos estatísticos e variáveis internas e macroeconômicas.
+
+**Principais Resultados:**
+* **Avaliação Geral:** Melhoria na metodologia em relação a modelos anteriores.
+* **Governança:**  Necessidade de adequação em relação à IN_1253 (Gestão de Risco de Modelos).
+* **Dados:** 
+    * **Concessão Varejo:**  Possíveis equívocos nos cálculos devido à agregação de dados de diferentes momentos, causando distorções.
+    * **PDD PME:**  Utilização de proxy (Over90 BACEN) por falta de dados suficientes, o que pode gerar um erro maior em comparação à modelagem direta da PDD.
+* **Classificação dos Modelos:** Grau de Exigibilidade de Monitoramento (GEM) N2 (Média).
+* **Monitoramento:** Os modelos ainda não possuem monitoramento, mas a área possui conhecimento para tal.
+
+**Recomendações:**
+*  Definir planos de ação para mitigar os riscos apontados, especialmente em relação à governança e à qualidade dos dados.
+* Implementar o monitoramento dos modelos.
+
+**Classificação Final:**
+* **Concessão Varejo (MOD000863):** Nota C (Médio)
+* **PDD PME (MOD000999):** Nota B (Baixo) 
+","* MOD000863
+* MOD000999 
+"
+MTV-98-2023 - Modelo de Collection Amigavel - 5 a 30 [uso dados externos bureau] (MOD000933).pdf,"O documento é um relatório de validação do modelo **COBR_PROPENSAO_CARTAO_AMIGAVEL_5_30_COLLECTION_BUREAU_V3**, que visa identificar clientes propensos a efetuar o pagamento mínimo da fatura do cartão em 30 dias. O relatório aborda os seguintes tópicos:
+
+**1. Resumo Executivo:**
+
+* Objetivo do modelo.
+* Metodologia de validação aplicada.
+* Principais constatações da validação, incluindo pendências encontradas e como foram sanadas.
+* Avaliação do monitoramento do modelo.
+* Conclusão da validação e nota atribuída ao modelo.
+
+**2. Objetivo:**
+
+* Descrição do objetivo da validação do modelo.
+* Dimensões avaliadas: Governança, Documentação e Monitoramento.
+
+**3. Resultados:**
+
+* Avaliação geral do modelo e seu entorno.
+* Tabela com as notas atribuídas a cada dimensão avaliada.
+* Menção às principais situações identificadas durante a validação.
+
+**4. Anotações de Risco:**
+
+* Não foram identificados riscos.
+
+**5. Oportunidades de Melhoria:**
+
+* Não foram identificadas oportunidades de melhoria.
+
+**6. Anexos:**
+
+* Descrição do checklist utilizado na validação.
+* Informações sobre as dimensões avaliadas:
+    * **Documentação:**
+        * Descrição do modelo e etapas de desenvolvimento.
+        * Detalhes sobre a técnica de modelagem utilizada (Light GBM).
+        * Códigos de desenvolvimento, escoragem e arquivo objeto modelo (MOJO).
+        * Informações sobre a implantação e aplicações do modelo.
+    * **Governança:**
+        * Processo de aprovação do modelo.
+        * Cadastro do modelo no sistema de gestão de modelos.
+    * **Monitoramento:**
+        * Classificação do modelo quanto à exigibilidade de monitoramento (GEM N1).
+        * Análise da suficiência do monitoramento:
+            * Operacionalização e periodicidade de execução.
+            * Monitoramento global (indicadores de acurácia e discriminação).
+            * Formalização, adequação dos patamares e status atual dos triggers.
+
+**Conclusão:**
+
+O modelo foi considerado adequado em relação às dimensões avaliadas, recebendo nota A em todas elas. O monitoramento foi considerado eficaz e a estrutura de governança, satisfatória. 
+","MOD000933 e MOD000774. 
+"
+"MTV-05-2023 - Modelo de necessidade de reneg para o público de cartões, solar e veículos.pdf","##  Relatório de Validação de Modelo -  MTV-05-2023
+
+**Objetivo:** Validação de 3 modelos de **necessidade de renegociação** para os públicos de veículos, cartões e público solar:
+
+* MOD000911 - Veículos
+* MOD000917 - Cartões
+* MOD000924 - Solar
+
+**Metodologia de Validação:** Baseada na IN_706, abrangendo as dimensões de Governança, Documentação e Monitoramento.
+
+**Principais Tópicos Abordados:**
+
+1. **Resumo Executivo:**
+    *  Apresentação dos modelos e resultado da validação (Nota A).
+2. **Objetivo:**
+    * Descrição do objetivo dos modelos e público-alvo.
+3. **Resultados:**
+    * Avaliação geral: Os modelos atendem aos objetivos em todos os aspectos.
+    * Tabela com ID, Tier, Escopo, Notas e Riscos de cada modelo.
+4. **Anotações de Risco:**
+    * Não há.
+5. **Oportunidades de Melhoria:**
+    * Não há.
+6. **Anexos:**
+    * **Documentação:**
+        * Descrição detalhada do modelo, incluindo:
+            * Especificações finais para uso.
+            * Metodologia de desenvolvimento (AHP).
+            * Variáveis utilizadas e suas descrições.
+            * Aplicações previstas e implantação.
+    * **Governança:**
+        * Aprovação: Evidências de aprovação conforme IN_1253 (Tier III).
+        * Cadastro: Print do cadastro no GRC, demonstrando informações completas.
+    * **Monitoramento:**
+        * Classificação do Modelo: Classificado como GEM N1 (alta exigibilidade de monitoramento).
+        * Análise de Suficiência:
+            * Operacionalização: Periodicidade de execução semestral, conforme governança.
+            * Monitoramento Global: Conjuntos de indicadores adequados para acompanhamento.
+            * Triggers:
+                * Formalização: Descrição da metodologia de definição dos triggers.
+                * Adequação dos Patamares: Triggers baseados em desvio padrão da média histórica, considerados adequados.
+                * Status Atual: Performance adequada, com indicadores no nível verde.
+
+**Conclusão:**
+
+O relatório conclui que os modelos são adequados do ponto de vista formal, recebendo nota A em todas as dimensões avaliadas. A documentação é completa, a governança está de acordo com as normas internas e o monitoramento é realizado de forma satisfatória. 
+","Os IDs dos modelos abordados no documento são: MOD000911, MOD000917 e MOD000924. 
+"
+VM-56-2023 - Score PME.pdf,"O documento é um relatório de validação de modelo para um score de crédito para PMEs desenvolvido pela Serasa. O relatório aborda os seguintes tópicos:
+
+**1. Resumo Executivo:** Apresenta o modelo, objetivo, dados utilizados, problemas encontrados e a nota final atribuída.
+
+**2. Objetivo:** Define o objetivo da validação do modelo e as dimensões avaliadas.
+
+**3. Resultados:** Apresenta a nota final do modelo e as principais situações identificadas.
+
+**4. Anotações de risco:** Detalha os riscos identificados no modelo, divididos em:
+    * **#R1 - Pontos de modelagem:** Problemas na metodologia, como a descontinuação do Risk6, falta de modelo de PD específico e inconsistência em variável.
+    * **#R2 - Monitoramento de performance:**  Ausência de monitoramento de performance.
+    * **#R3 - Disponibilização de informações:**  Documentação incompleta sobre o desenvolvimento do modelo.
+
+**5. Oportunidades de melhoria:** Sugere melhorias para os problemas encontrados, divididas em:
+    * **#M1 - Uso variável Risk6:** Testar a variável de forma categórica.
+    * **#M2 - Informações disponibilizadas de forma equivocada:** Corrigir informações equivocadas na documentação.
+
+**6. Análise de Suficiência:**
+    * **6.1. Classificação do modelo:** Classifica o modelo como GEM N1 (alta exigibilidade de monitoramento).
+    * **6.2. Análise de Suficiência:** Avalia a suficiência do monitoramento como ""2 - Possui Ressalvas"".
+
+**7. Anexo:**
+    * **7.1. Processo de aplicação:** Ilustra o processo de aplicação do score.
+    * **7.2. Breve descritivo do modelo:** Descreve o modelo, segmentações e dados utilizados. 
+","O documento aborda apenas um modelo, cujo ID é: MOD000651. 
+"
+MTV-72-2023 - COBR - Modelo de Renegociação [foco reduzir canibalização] 90 a 120 (Melhoria 691) (MOD000951).pdf,"O documento é um relatório de validação de um modelo chamado **COBR - Modelo de Renegociação**, desenvolvido pelo banco BV. O relatório apresenta as seguintes seções principais:
+
+**1. Resumo Executivo:**
+
+* O modelo visa identificar clientes com atraso entre 90 e 120 dias, propensos a quitar ou atualizar seus débitos, focando na oferta de renegociação para clientes menos propensos.
+* A validação não encontrou problemas críticos, apenas pendências na documentação, que foram resolvidas durante o processo.
+* O modelo foi considerado adequado do ponto de vista formal, recebendo nota A.
+
+**2. Objetivo:**
+
+* Validar o modelo COBR - Modelo de Renegociação, utilizando a metodologia padrão de validação descrita na IN_706.
+* As dimensões avaliadas foram Governança, Documentação e Monitoramento.
+
+**3. Resultados:**
+
+* O modelo e seu entorno foram considerados adequados em todos os aspectos avaliados.
+
+**4. Anotações de Risco:**
+
+* Não há.
+
+**5. Oportunidades de melhoria:**
+
+* Não há.
+
+**6. Anexos:**
+
+* **6.1 Documentação:**
+    * A documentação foi considerada completa e clara, abordando:
+        * Especificações finais do modelo para uso.
+        * Técnica empregada (Random Forest).
+        * Etapas de desenvolvimento do modelo (códigos, bases, variáveis, etc.).
+        * Aplicações previstas e informações de implementação.
+* **6.2 Governança:**
+    * O modelo teve sua aprovação devidamente registrada no sistema do banco, seguindo as normas da IN_1253.
+* **6.3 Monitoramento:**
+    * **6.3.1 Classificação do modelo:**
+        * O modelo foi classificado como GEM N1 (alta exigibilidade de monitoramento), devido à sua sensibilidade a mudanças nos dados.
+    * **6.3.2 Análise de suficiência:**
+        * O monitoramento do modelo foi considerado adequado, com indicadores relevantes para avaliar a acurácia e discriminação, além de triggers para detecção de desvios.
+
+Em resumo, o relatório conclui que o modelo COBR - Modelo de Renegociação está **formalmente adequado e pronto para uso**, com monitoramento constante para garantir sua performance ao longo do tempo. 
+","* MOD000951 
+* MOD000726 
+"
+VM-24-2023 - Teste de Estresse Climatico.pdf,"##  Relatório de Validação Independente de Modelos - Teste de Estresse Climático (VM-24-2023)
+
+**Objetivo:** Validação do modelo ""Teste de Estresse Climático""  quanto à sua aderência à resolução 4943 do BACEN e à governança interna de modelos.
+
+**Cenários Climáticos:** O modelo utiliza 3 dos 6 cenários climáticos propostos pelo NGFS, alinhados ao Acordo de Paris:
+* Net Zero 2050 (cenário ordenado)
+* Divergente Net Zero (cenário desordenado)
+* NDCs (cenários Hot House World)
+
+**Aspectos Abordados:**
+
+* **Governança:** O modelo apresentou falhas na governança inicialmente, mas a área responsável solucionou as pendências antes da emissão do relatório.
+* **Documentação:** A validação identificou a falta de documentação completa sobre o desenvolvimento do modelo, o que impede a sua réplica e aumenta o risco de perda de informação.
+* **Classificação do Modelo:**
+    * **Monitorabilidade:** Média (área já monitorava modelos semelhantes).
+    * **Essencialidade:** Média (considerando a instabilidade de variáveis macroeconômicas).
+    * **GEM:** N2 (Média exigibilidade de monitoramento).
+* **Monitoramento:** O modelo ainda não possui monitoramento implementado, mas a área possui conhecimento para tal. Classificado como ""Oportunidade de Melhoria"".
+* **Aplicação:** O modelo alimenta o processo de ICAAP (Internal Capital Adequacy Assessment Process) e análises adicionais da instituição.
+
+**Resultados:**
+
+* **Nota Final do Modelo:** C (O modelo e seu entorno atendem aos seus objetivos com falhas mínimas em alguns de seus componentes ou critérios avaliados).
+* **Risco do Modelo:** Médio.
+
+**Próximos Passos:**
+
+* A área responsável deve elaborar plano de ação para os apontamentos levantados na validação, especialmente a questão da documentação.
+* O modelo será reavaliado antes do próximo ICAAP. 
+","MOD001003 
+"
+MTV-134-2023 - RC - Atacado - Modelo - Volatilidade PD Atacado - Lifetime para RAR (MOD000451).pdf,"O documento é um relatório de validação de um modelo chamado ""Modelo - Volatilidade PD Atacado - Lifetime para RAR"", utilizado para estimar a volatilidade da Probabilidade de Default (PD) ao longo do tempo para clientes de crédito do tipo ""Atacado"" em um banco. O modelo é usado especificamente em uma calculadora de RAR (Regulatory Capital) para o segmento Corporate/Large, que utiliza simulações de Monte Carlo.
+
+**Principais tópicos abordados:**
+
+* **Objetivo da validação:** Verificar se o modelo e seus componentes estão adequados e atendem aos requisitos da IN_706.
+* **Escopo da validação:** Abrange as dimensões de Governança, Documentação e Monitoramento do modelo.
+* **Resultados da validação:** O modelo foi considerado **""adequado, com oportunidade de melhoria""**, recebendo a nota geral **""B""**.
+* **Pontos fortes:** 
+    * Governança, documentação e metodologia bem estruturadas.
+    * Modelo determinístico com perfil ""low default"", o que o torna menos suscetível à degradação.
+* **Pontos fracos (oportunidades de melhoria):**
+    * **Ausência de monitoramento formal da performance do modelo.** Apesar de não ser considerado um risco crítico devido à natureza do modelo, a implementação de um monitoramento periódico é recomendada.
+* **Conclusão:** O modelo é considerado válido para uso, mas a implementação do monitoramento é recomendada para garantir sua robustez ao longo do tempo.
+
+**Observações:**
+
+* O relatório indica que esta é uma revalidação do modelo, sendo a última realizada em dezembro de 2020.
+* O modelo é classificado como ""Tier III"" de acordo com a IN_706.
+* O documento faz referência a outros documentos e validações anteriores (MTV-48-2019 e VM-04-2020), que fornecem informações adicionais sobre o modelo e seu histórico. 
+","O documento aborda apenas o modelo **MOD000451**. 
+"
+MTV-80-2023 - Validação Contínua PE Consignado Privado.pdf,"##  Resumo dos Tópicos Abordados no Relatório de Validação de Modelos:
+
+**Título do Documento:** MEMORANDO TÉCNICO DE VALIDAÇÃO DE MODELO (MTV-80-2023)
+
+**Assunto:** Validação Contínua - Modelos Perda Esperada Safra Privado
+
+**Objetivo:** Relatar a validação contínua dos modelos de Perda Esperada Safra Privado, previamente avaliados no documento MTV-24-2020.
+
+**Pontos Abordados:**
+
+1. **Contexto:** Apresentação do objetivo e escopo da validação, referenciando o trabalho anterior (MTV-24-2020) e a metodologia utilizada (IN_706).
+
+2. **Sumário Executivo:** Descrição concisa dos resultados da validação, incluindo:
+    * Identificação de riscos relacionados à metodologia, emprego e monitoramento dos modelos.
+    * Cumprimento de planos de ação para os apontamentos levantados no trabalho anterior.
+    * Conclusão geral de que os modelos atendem aos seus objetivos, com oportunidades de melhoria e baixo risco residual.
+
+3. **Detalhes da Validação:**
+    * Tabelas listando os modelos e as respectivas anotações de risco, incluindo IDs e referências aos planos de ação.
+    * Descrição detalhada de cada plano de ação, com os seguintes tópicos:
+        * Título do Apontamento
+        * Descrição do Apontamento
+        * Descrição do Plano de Ação (incluindo ""How"", ""What"", ""Where"" e ""Why"")
+        * Status de Implementação
+
+4. **Evidências de Implementação:**
+    * Apresentação de evidências que comprovam a implementação dos planos de ação, como:
+        * Trechos de código-fonte
+        * E-mails com aprovações
+        * Prints de telas do sistema
+        * Relatos de reuniões
+        * Documentos de especificação
+
+5. **Monitoramento dos Modelos:**
+    * Discussão sobre a importância do monitoramento contínuo dos modelos.
+    * Links para os dashboards de monitoramento das componentes da perda esperada (PD, EAD e LGD).
+    * Identificação da necessidade de aprimoramento nos dashboards, com a inclusão de indicadores ""early warning"".
+
+6. **Oportunidades de Melhoria:**
+    * Sugestões de melhorias para os modelos, visando:
+        * Aprimorar a acurácia preditiva.
+        * Refinar a granularidade da modelagem.
+        * Incluir novas variáveis e técnicas de modelagem.
+
+7. **Conclusão:**
+    * Reforço da conclusão geral sobre a adequação dos modelos, com ressalvas sobre os pontos de melhoria identificados.
+
+8. **Próximos Passos:**
+    * Indicação de que a equipe responsável continuará monitorando os modelos e implementando as melhorias sugeridas.
+
+**Observação:** O relatório utiliza linguagem técnica, direcionada a um público familiarizado com modelagem de risco de crédito.","Os IDs dos modelos abordados no documento são: 
+
+* MOD000038
+* MOD000623
+* MOD000042
+* MOD000015
+* MOD000040 
+"
+VM-08-2023 - Projeção Auxiliar Variáveis Teste de Estresse.pdf,"##  Relatório de Validação de Modelos (VM-08-2023) -  Projeção Auxiliar de Variáveis Econômicas do Teste de Estresse (MOD000977)
+
+**Objetivo:** Validação das novas versões das projeções auxiliares de variáveis econômicas para uso no Teste de Estresse Bottom-Up (TEBU).
+
+**Contexto:**
+
+* As projeções visam estimar, para os próximos 3 anos, variáveis sugeridas pelo regulador, mas sem projeções disponíveis (Spread de Crédito, Renda e Confiança do Consumidor).
+* Modelos anteriores foram afetados pela qualidade dos dados de entrada.
+* As novas versões utilizam apenas fontes seguras e confiáveis (BACEN e IBGE).
+* A metodologia utilizada é a mesma dos demais modelos de teste de estresse.
+
+**Aspectos Analisados:**
+
+* **Governança:** 
+    * Inventariamento do modelo no sistema GRC.
+    * Cadastro de modelos antecessores.
+    * Aprovação na alçada competente.
+* **Documentação:** Clareza, organização e replicabilidade.
+* **Dados:** Fontes e qualidade.
+* **Metodologia:** Abordagem e técnicas utilizadas.
+* **Implementação:** Codificação e processo de geração de resultados.
+* **Monitoramento:**  Plano de acompanhamento e atualização do modelo.
+
+**Resultados:**
+
+* **Nota Final do Modelo:** A (atende plenamente aos objetivos em todos os aspectos avaliados).
+* **Risco do Modelo:** Baixo.
+
+**Apontamentos (Solucionados durante a validação):**
+
+*  O modelo não seguia a governança estabelecida na IN_1253 Gestão de Risco de Modelos - Framework.
+
+**Observações:**
+
+* As projeções utilizam apenas variáveis macroeconômicas.
+* O modelo se baseia em cenários macroeconômicos que podem ser desenvolvidos internamente ou pelo Banco Central.
+* As variáveis macroeconômicas são aplicadas a modelos econométricos que relacionam movimentos econômicos com fatores internos da instituição.
+
+**Próximos Passos:**
+
+* Acompanhar o desempenho do modelo e revisar periodicamente a sua validade. 
+","MOD000977. 
+"
+MTV-06-2023 -Modelo de propensão para Saque FGTS (MOD000920).pdf,"##  Relatório de Validação de Modelo -  Modelo de propensão para Saques FGTS (MOD000920)
+
+**Conteúdo:**
+
+1. **Resumo Executivo:**
+    * Apresentação do modelo e objetivo (identificar público propenso a aceitar empréstimo de antecipação do Saque Aniversário do FGTS).
+    * Resultados da validação: modelo adequado com oportunidade de melhoria (nota B).
+    * Destaque para fragilidade na documentação (resolvida) e oportunidade de melhoria no monitoramento. 
+
+2. **Objetivo:**
+    * Validação do modelo conforme metodologia padrão (IN_706) nas dimensões: Governança, Documentação e Monitoramento.
+
+3. **Resultados:**
+    * Afirmação de que o modelo atende aos objetivos com oportunidades de melhorias.
+    * Tabela com notas da avaliação por dimensão.
+
+4. **Anotações de Risco:**
+    * Não há.
+
+5. **Oportunidades de melhoria:**
+    * **#M1:** Aprimorar a sensibilização do farol de performance do modelo utilizando o indicador de estabilidade populacional.
+
+6. **Anexos:**
+    * Descrição da metodologia de validação por checklist.
+
+**6.1 Documentação (Nota A):**
+    * Análise da documentação do modelo: completude e clareza.
+    * Detalhes sobre a metodologia Random Forest utilizada.
+    * Informações sobre os códigos de desenvolvimento e escoragem.
+    * Apresentação do caminho para acesso ao arquivo objeto modelo (MOJO).
+    * Descrição das etapas de desenvolvimento, variáveis utilizadas e tratamento dos dados.
+    * Informações sobre as aplicações e público-alvo do modelo.
+
+**6.2 Governança (Nota A):**
+    * Verificação do cumprimento das normas de governança (IN_1253) para modelos Tier III.
+    * Confirmação da aprovação do modelo na instância correta (Superintendente).
+    * Análise do cadastro do modelo no inventário.
+
+**6.3 Monitoramento (Nota B):**
+    * Classificação do modelo como GEM N1 (alta exigibilidade de monitoramento).
+    * Análise da  suficiência,  periodicidade de execução, acurácia e gatilhos do monitoramento.
+    * Descrição do processo de acompanhamento do modelo e  detalhamento dos indicadores utilizados.
+    * Identificação de oportunidade de melhoria relacionada ao acompanhamento do indicador de estabilidade populacional (PSI).
+
+**Considerações finais:**
+
+O relatório apresenta uma análise completa do modelo, destacando seus pontos fortes e oportunidades de melhoria. A linguagem é clara e objetiva, facilitando a compreensão do conteúdo. A utilização de figuras e tabelas auxilia na visualização das informações. 
+","* MOD000920 
+"
+MTV-76-2023 - COBR - Collection de CP para atrasos longos - CP Neon (MOD000994).pdf,"O documento é um relatório de validação de um modelo chamado ""COBR - Collection de CP para atrasos longos - CP Neon"" (MOD000994) de responsabilidade da gerência executiva de gestão de riscos de um banco.
+
+**Principais tópicos abordados:**
+
+* **Objetivo do modelo:** Auxiliar na redução da inadimplência em um produto de crédito.
+* **Metodologia de validação:**  Baseada na IN_706, abrangendo governança, documentação e monitoramento do modelo.
+* **Resultados da validação:** O modelo foi considerado adequado em todos os aspectos avaliados, recebendo nota A.
+* **Documentação:** Análise da completude e clareza da documentação, incluindo o código fonte, etapas de desenvolvimento, arquivo objeto do modelo (MOJO) e descrição das variáveis.
+* **Governança:**  Verificação do processo de aprovação do modelo, que atendeu às normas internas, com aprovação do superintendente da área e parecer positivo da área de gestão de riscos.
+* **Monitoramento:**  
+    * Classificação do modelo quanto à exigência de monitoramento (GEM N1 - alta exigibilidade).
+    * Análise da periodicidade de atualização do monitoramento, considerado adequado.
+    * Avaliação dos indicadores de performance, constatando a presença de indicadores de acurácia e discriminação relevantes para o tipo de modelo.
+    * Verificação da formalização e dos patamares dos triggers de acompanhamento do modelo.
+
+**Observações:**
+
+* Durante o processo de validação, foram encontradas pendências na documentação e no monitoramento, que foram sanadas pela área responsável pelo modelo.
+* O relatório apresenta um resumo executivo, detalhando os principais pontos da validação.
+
+Em suma, o documento atesta a qualidade do modelo ""COBR - Collection de CP para atrasos longos - CP Neon"", validando sua utilização para a finalidade proposta. 
+","MOD000994. 
+"
+MTV-63-2023 - COBR - Modelo Collection 120-360 incluindo variáveis do speech e de bureaus externos (MOD000843).pdf,"##  Relatório de Validação de Modelo - COBR - Modelo Collection 120-360 
+
+**Objetivo:** Validação do modelo COBR - Modelo Collection 120-360 incluindo variáveis do speech e de bureaux externos.
+
+**Escopo:**
+* **Modelo:** COBR - Modelo Collection 120-360 incluindo variáveis do speech e de bureaux externos (MOD000843)
+* **Tier:** III
+* **Objetivo do Modelo:** Propensão de pagamento de dívida por clientes com atraso de 121-360 dias.
+* **Abrangência da Validação:** Dimensões de Governança, Documentação e Monitoramento.
+
+**Principais Pontos Abordados:**
+
+* **Resumo Executivo:** Apresentação do modelo, metodologia de validação e resultado geral (Nota B - O modelo e seu entorno atendem parcialmente aos seus objetivos com oportunidades de melhorias).
+* **Objetivo:** Descrição do objetivo da validação.
+* **Resultados:** Avaliação geral do modelo e indicação da necessidade de melhorias.
+* **Anotações de Risco:** Inexistência de anotações de risco.
+* **Oportunidades de Melhoria:**
+    * Mudança significativa no índice de estabilidade populacional (PSI) impactando a discriminação (KS). Recomendação de acompanhamento para evitar queda de performance.
+* **Anexos:** Descrição da metodologia de validação e ferramentas utilizadas.
+* **Documentação:**
+    * Descrição detalhada do modelo, incluindo metodologia (Light GBM), código, arquivo MOJO, etapas de desenvolvimento, variáveis utilizadas e seleção destas.
+    * Avaliação positiva da documentação (Nota A).
+* **Governança:**
+    * Descrição do processo de aprovação para modelos Tier III.
+    * Confirmação da aprovação do modelo conforme governança (Aprovação do superintendente).
+    * Cadastro adequado do modelo no GRC.
+    * Avaliação positiva da governança.
+* **Monitoramento:**
+    * Classificação do modelo como GEM N1 (alta exigibilidade de monitoramento).
+    * Análise da suficiência do monitoramento:
+        * Monitoramento realizado através do Power BI com indicadores adequados de acurácia e discriminação (KS, ACC, AUROC, F1, GINI, PRECISION, RECALL).
+        *  Triggers formalizados e com patamares adequados.
+        * Status atual do modelo: Faróis verdes nas últimas três safras.
+        *  Detecção de instabilidade no indicador PSI em setembro de 2022 devido à mudança na tabela utilizada. Recomendação de acompanhamento da mudança populacional.
+    * Avaliação da Dimensão Monitoramento:  Apesar da estrutura adequada, a instabilidade no indicador PSI leva a uma oportunidade de melhoria e nota B para a dimensão.
+
+**Conclusão:** O modelo apresenta-se parcialmente adequado, com documentação e governança satisfatórias, porém com necessidade de acompanhamento da estabilidade populacional e atualização do monitoramento em relação à mudança na tabela utilizada. 
+",MOD000843
+MTV-61-2023 -Rating Clientes (MOD000996).pdf,"##  Relatório de Validação de Modelo - Rating Cliente (MOD000996) 
+
+**Tópicos Abordados:**
+
+1. **Informações Gerais:**
+    * Nome do Modelo: Rating Cliente
+    * ID do Modelo: MOD000996
+    * Data do Relatório: 26/06/2023
+    * Destino: Diversas áreas do banco, incluindo Crédito, Riscos e Visão Cliente.
+
+2. **Resumo Executivo:**
+    * Objetivo do modelo: Classificar o nível de risco de crédito do cliente numa visão global e multiproduto.
+    * Base de dados: Informações comportamentais, bureaus externos (Quod, Boa Vista e Serasa) e Bacen (SCR).
+    * Aplicação atual: Ferramenta de suporte à concessão de crédito em Cartões, EVG e Saúde (apenas como ponto de corte).
+    *  Deficiências encontradas: 
+        * Ausência de documentação técnica.
+        * Ausência de monitoramento de performance.
+    * Classificação do Modelo: Nota D (deficiência importante).
+
+3. **Objetivo da Validação:**
+    * Validar o modelo Rating Cliente (MOD000996) conforme a metodologia da IN_706.
+    * Emitir parecer preliminar para as dimensões de Governança, Documentação e Monitoramento.
+    * Realizar revalidação técnica após a finalização da anotação de risco.
+
+4. **Resultados da Validação:**
+    * O modelo atende **parcialmente** aos seus objetivos.
+    * Falhas importantes em componentes centrais demandam ação corretiva tempestiva.
+    * Notas por Dimensão:
+        * Governança: A
+        * Documentação: D
+        * Dados: N/A
+        * Metodologia: N/A
+        * Emprego: N/A
+        * Monitoramento: D
+
+5. **Anotações de Risco:**
+    * **#R1:** Deficiência na documentação e ausência de monitoramento do Modelo Rating Cliente e seus componentes (ISSUE_011583).
+        * **Criticidade:** Alta
+        * **Responsável:** Gerência Estratégia de Crédito Visão Cliente e Neon
+        * **Situação identificada:**  Modelo não aderente à IN_1253 (Gestão de Risco de Modelos).
+        * **Detalhes:** Ausência de documentação e monitoramento detalhados, falta de identificação de eventuais degradações.
+        * **Ações:** Formalização da Issue no sistema de gestão de apontamentos, com plano de ação para resolução.
+
+6. **Análise das dimensões:**
+    * **Documentação:**
+        * Modelo sem documentação técnica detalhada.
+        * Plano de ação: Criar documentação completa (TSK_077871).
+    * **Governança:**
+        * Modelo Tier I com aprovação para implementação em até 10% do público-alvo.
+        * Anuência da área de Riscos e aprovação do Diretor Executivo obtidas.
+        * Cadastro no GRC realizado corretamente.
+    * **Monitoramento:**
+        * Ausência de controle de performance.
+        * Plano de ação: Criar estrutura de monitoramento com indicadores chave (TSK_077922).
+
+7. **Conclusão:**
+    * Modelo precisa de ações corretivas para atender à IN_706.
+    * Revalidação técnica será realizada após a implementação das ações corretivas. 
+
+**Temas Abordados:**
+
+* Validação de modelos.
+* Gestão de risco de modelos.
+* Documentação de modelos.
+* Monitoramento de performance de modelos.
+* Governança de modelos.
+* Anotações de risco.
+* Plano de ação.
+* IN_706.
+* IN_1253.
+* IN_1146. 
+","O único ID de modelo presente no documento é **MOD000996**. 
+"
